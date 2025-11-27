@@ -1,0 +1,725 @@
+
+<!--doctype html-->
+
+<!-- Copyright Gabriel Lawrence - Spring 2026 -->
+ <!-- gabeL@virginia.edu -->
+<!-- Web template from Sonia Baee -->
+<!-- sb5ce@virginia.edu -->
+
+<html lang="en">
+
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Gabriel Lawrence, 2026">
+  <title>Simulation and Modelling (SYS 3062)</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/vision-style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="theme-color" content="#563d7c">
+
+</head>
+
+<body>
+<div class="container blank-container pt-3">
+
+  <header class="website-header">
+  </header>
+
+  <main role="main" class="px-4 pb-5">
+    <div class="header row header-text mb-2" style="padding-top: 2em;" id="main">
+      <div class="col-lg-9 text-lg-left text-center">
+
+        <img src="images/uva-logo.png" height="100"> 
+
+        <h4 class="mb-1" style="color:#444;margin-top:10px">
+          SYS3062: Modelling and Simulation <span style="color:#767676;font-size:0.8em">| Spring 2025</span>
+        </h4>
+        
+        <div>
+          <div class="d-sm-inline">
+            <img class="rounded-circle my-2" src="images/Mortveit_headshot.png" width="86"/>
+            <img class="rounded-circle my-2" src="images/GabeCropped.jpg" width="86">
+            <img class="rounded-circle my-2" src="images/maddie.jpeg" width="86">
+            <img class="rounded-circle my-2" src="images/tracey.jpeg" width="86">
+          </div>
+        </div>
+        <div>
+          <span>Professor: <a href="https://engineering.virginia.edu/faculty/henning-s-mortveit"><strong>Henning Mortveit</strong></a></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(Henning.Mortveit at virginia.edu), <span style="font-size:0.9em">Office Hours: TBD in Olsson Thur TBD on TBD </span></span>
+        </div>
+        <div>
+          <span>Lab Instructor: <a href="https://www.linkedin.com/in/gabriel-lawrence-ort1/"><strong>Gabriel (Gabe) Lawrence</strong></a></span>
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(gabeL at virginia.edu), <span style="font-size:0.9em">Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.</span></span>
+        </div>
+        <div>
+          <span>Undergraduate/ME Teaching Assistant: <a href="https://www.linkedin.com/in/madeline-priebe-302386224"><strong>Madeline (Maddie) Priebe</strong></a></span> 
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(map7cma at virginia.edu), <span style="font-size:0.9em">Office Hours: Tue TBD in TBD Fri 10am-11:30am on TBD.</span></span> 
+        </div>
+        <div>
+          <span>Undergraduate Teaching Assistant: <a href="https://www.linkedin.com/in/tracy-hua/"><strong>Tracy Hua</strong></a></span> 
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(njn4gb at virginia.edu), <span style="font-size:0.9em">Office Hours: Wed TBD in Olsson TBD.</span></span> 
+        </div>
+       <div>
+          <span>Undergraduate Teaching Assistant: <a href="https://example.com"><strong>TBD</strong></a></span> 
+          <span class="d-lg-inline d-block mb-lg-0 mb-2">(mcu2xn at virginia.edu), <span style="font-size:0.9em">Office Hours: Fri TBD in Link Lab 225.</span></span> 
+        </div>
+        <div style="font-weight:400">Class Time: Monday and Wednesday between 2PM and 3:15PM (ET).</div>
+        <div>Discussion Forum: <a href=" https://piazza.com/class/tbd">Piazza for SYS 3062</a></div>
+
+      </div>
+<!-- <div class="col-1 text-right d-lg-block d-none">
+        <a href="">
+          <img src="images/r.jpg" width="650%" />
+        </a>
+      </div> 
+ -->
+
+
+
+    <hr>
+    <div style=" position:fixed;background:white;width:100%;z-index: 999;top: 0;flex-direction: column; padding-bottom: 1em; padding-top: 1em;">
+      <span>
+        <a href="#main">Main</a> | <a href="#class">Class Description</a> | <a href="#schedule">Schedule</a> | <a href="#evaluation">Student Evaluation</a> | <a href="#policies">Course Policies</a> 
+      </span>
+    </div>
+    <hr>
+    </div>
+
+
+
+    
+    <div class="section" id="class" style="padding-top: 3em;">
+    <h4> Basic Course Information</h4>
+  </div>
+  <hr>
+    <div class="section row mb-2 p-1" style="padding-top:3em;overflow: auto;" >
+      
+      <div class="col-12 p-2" id="description" style="padding-top: 2 em;">
+      <strong><b>Course Description: </b></strong>
+    <p>This course is an introduction to theory and practice for modeling
+and simulation, two mainstays of system engineering. The course
+provides a broad foundation covering fundamental principles,
+paradigms, and practices for modeling and analyzing stochastic systems
+through computational experiments, aka <em>simulations</em>. It is a course
+integrating theory and practice through lectures and lab sessions
+across topics such as the following:</p>
+<ul>
+<li><p>Modeling, model verification &amp; validation, types of uncertainties,
+with examples of types of models. Modeling and simulation through
+the lens of stochastic processes.</p>
+</li>
+<li><p>Techniques theory (SLLN, CLT) for Monte Carlo based simulation
+analytics (aka &quot;output analysis&quot;) used to estimate means and
+variances of system variables. Statistical independence and lack
+thereof.</p>
+</li>
+<li><p>Construction of single confidence intervals with adjustments for
+skewness. Construction of multiple, simultaneous confidence
+intervals and the Bonferroni correction.</p>
+</li>
+<li><p>Estimating sample size to generate confidence intervals with
+prescribed tolerances.</p>
+</li>
+<li><p>Spreadsheet-based simulations using the XLRisk plugin.</p>
+</li>
+<li><p>The process of distribution modeling (aka &quot;input analysis&quot;) for
+capturing random variables of the system. Goodness of fit assessment
+through the $\chi^2$- and KS-tests. The Phitter tool.</p>
+</li>
+<li><p>Simulation logic, common data structures, platforms and
+architectures (e.g., HLA, cloud solutions). Pipelines and
+workflows. Data management.</p>
+</li>
+<li><p>Queueing systems.</p>
+</li>
+<li><p>Random number generators (RNGs) and their role in simulation-based
+system analysis. Assessing the quality of RNGs. Pitfalls.</p>
+</li>
+<li><p>Generating variates from distributions other than $U(0,1)$.</p>
+</li>
+<li><p>Selected topics, e.g., agent-based modelling, state machines,
+comparing alternative systems, simulation optimization; case
+studies.</p>
+</li>
+</ul>
+      </div>
+      <div class="col-12 p-2" id="objectives" style="padding-top: 2 em;">
+  <strong><b>Learning Objectives: </b></strong> 
+     <ul>
+      <p> In your professional careers you will undoubtedly encounter projects and problems where simulation is an option for a solution. The purpose of this course is to provide you with a foundation covering theory and practice for stochastic simulations as a method for the design and analysis of systems. </p>
+  </div>
+      <div class="col-6 p-2" id="prereqs" style="padding-top: 2 em;">
+        <strong><b>Prerequisites: </b></strong> 
+        <p>SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent (you have a question of what is equivalent, please write to Professor Mortveit and Gabe).
+        It is recommended that students have a basic command of linear algebra, calculus, probability, and statistics. We will use Python for simulation and VS Code for our programming sessions. Student are encouraged to familiarize themselves with <a href="https://www.datacamp.com/courses/intro-to-python-for-data-science">Python programming</a>, <a href="https://simpy.readthedocs.io/en/latest/simpy_intro/index.html"> SimPy</a> or <a href = https://salabim.org/manual/salabim.pdf> Salabim </a>, and <a href="https://code.visualstudio.com/docs"> VS Code</a>. 
+        Some Reviews that may be helpful are available at <a href="https://www.youtube.com/playlist?list=PL3nE1Yo1b4CpcEOgS3s80YUys7nGRqVPM"> A Sufficient Review of Probability (APMA 3100) for Engineers </a> and <a href="https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr"> A Sufficient Review of Statistics (APMA 3120) </a>.
+  </p>
+      </div>
+
+      <div class="col-6 p-2" id="textbook" style="padding-top: 2 em;">
+  <strong><b>Recommended Textbooks:</b></strong> 
+          <p> Averill M. Law (2013) Simulation Modeling & Analysis (5th edition), and Modelling and Simulation by Henning Mortveit and Gabriel Lawrence (available at <a href="https://github.com/Gabriel-vzh2vs/Modelling-And-Simulation-Public-Release">Github</a>), but, students may be recommended to read chapters from:
+    <ul>
+    <li><a href="https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf"> Discrete Event Simulation, 5th Edition</a> by Banks and et. al.</li>
+    <li><a href="https://artowen.su.domains/mc/"> Monte Carlo Theory, Methods, and Examples </a> by Art B. Owen</li>
+    <li><a href="https://learning.oreilly.com/library/view/hands-on-simulation-modeling/9781804616888/"">Hands-On Simulation Modelling with Python </a> by Giuseppe Ciaburro through UVA Library </li>
+    <li><a href="https://onlinelibrary.wiley.com/doi/book/10.1002/9780470317068"> Simulation: A Modeler's Approach </a> by James R. Thompson through UVA.</li>
+    <li><a href="https://ebookcentral.proquest.com/lib/uva/detail.action?docID=1044919"> Simulation 5th Edition </a> by Ross.</li>
+    <li><p><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599">HOW TO DO SYSTEMS ANALYSIS</a> by John E. Gibson William T. Scherer, and William F. Gibson</p></li>
+    <li><p>A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz <a href="https://ieeexplore.ieee.org/abstract/document/10408241">Chances and Challenges of ChatGPT and Similar Models for Education in M&amp;S</a> 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241.</p>
+          </ul>
+    </p>
+      </div>
+    </div>
+
+    <p><strong><strong>Attendance:</strong></strong>
+    Official written attendance will not be taken. Quizzes may be administered unannounced during any lecture hour, and online surveys will be conducted in class. A student who misses a quiz will not receive credit and will not be offered a make-up quiz, unless he/she has given prior notification of absence from lecture to me (not the TA).</p>
+    <p><strong><strong>Homework Policies:</strong></strong></p>
+    <ol>
+    <li>Homework assignments will be assigned throughout the semester.</li>
+    <li>Your assignments must be neat and legible, or points will be deducted.</li>
+    <li>Your assignments must give details outlining how you got to your solution, or points will not be granted.</li>
+    <li>You will upload your homework through Canvas by the due date and time specified. Typed and written assignments are acceptable.</li>
+    <li>Use of AI for homework and projects is permitted, provided that its role is clearly defined.</li>
+    <li>NO LATE HOMEWORKS WILL BE ACCEPTED WITHOUT PRIOR PERMISSION.</li>
+    </ol>
+
+    <p><strong>Software</strong>
+  Some words about specialized software including Simio, Flexsim,
+  Anylogic, and Arena. Our strategy of using Python and XLRisk. That as
+  a professional, you may have to become familiar with one of
+  these. Also: Brian Park&#39;s graduate course uses it.</p>
+
+    <div class="section " id="schedule" style="padding-top: 3em;">
+      <h4 >Schedule</h4>
+      <hr>
+      <div class="section section-text">
+      <p>
+        <strong>Disclaimer: </strong>
+        The Instructors reserve the right to make changes to the syllabus, including lab, project, homework, ICPS, and exam due dates. These changes will be announced as early as possible.
+      </p>
+    </div>
+  
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Topic</th>
+            <th scope="col">&nbsp;</th>
+          </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>Tues, Jan 13th</td>
+          <td>
+            Lecture: Introduction to Modelling and Simulation 
+            Lab: Software Installation, Course Overview, Demo <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8">
+            Release Lab 1
+            <div class="mt-1 p-0"><strong>Friday September 2nd, 9:00am (ET).</strong></div>
+          </td>
+        </tr>
+  
+        <tr>
+          <td>Thur, Jan 15th</td>
+          <td>
+            Visualization <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, Jan 20th</td>
+          <td>
+            Visualization <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8">
+            Release Lab 1
+            <div class="mt-1 p-0"><strong>Friday September 2nd, 9:00am (ET).</strong></div>
+          </td>
+        </tr>
+        
+         <tr>
+          <td>Thur, Jan 22nd</td>
+          <td>
+            Visualization <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Tues, Jan 27th</td>
+          <td>
+            Extremes <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+    
+
+        <tr>
+          <td>Thur, Jan 29th</td>
+          <td>
+            Principle Components Analysis (PCA) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, Feb 3rd</td>
+          <td>
+            Principal Components Analysis (PCA) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8">
+            Release Lab 2
+            <div class="mt-1 p-0"><strong>Friday September 16th, 9:00am (ET).</strong></div>
+          </td>
+        </tr>
+
+         <tr class="assignment">
+          <td><strong>Friday, Sep 16th, 11:59pm (ET)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Due</strong> Lab 1 : Visualization 
+            <!--[<a href="">Colab</a>]. -->
+            <!-- <div class="mt-1 p-0">Due <strong>Friday September 16th, 11:59pm (ET).</strong></div> -->
+          </td>
+        </tr>
+
+        <tr>
+          <td>Thurs, Feb 5th</td>
+          <td>
+            RDM Notebooks/PCA Exercise <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, Feb 10th</td>
+          <td>
+            Multiple Linear Regression (MLR) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, Feb 13th</td>
+          <td>
+            Multiple Linear Regression (MLR) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Wed, Feb 17th</td>
+          <td>
+            Multiple Linear Regression (MLR) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="8">
+            Release Lab 3
+            <div class="mt-1 p-0"><strong>Friday September 30th, 9:00am (ET).</strong></div>
+          </td>
+        </tr>
+
+         <tr class="assignment">
+          <td><strong>Friday, Sep 30th, 11:59pm (ET)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong> Due </strong> Lab 2 : Principle Component Analysis 
+            <!--[<a href="">Colab</a>]. -->
+            <!-- <div class="mt-1 p-0">Due <strong>Friday September 30th, 11:59pm (ET).</strong></div> -->
+          </td>
+        </tr>
+          
+        <tr class="noclass">
+          <td>Tues, Feb 24rd</td>
+          <td>Worm </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thurs, Feb 26th</td>
+          <td>
+            Multiple Linear Regression (MLR) <!--[<a href="">pptx</a>] [<a href="">pdf</a>]-->
+          </td>
+          <td class="text-center" colspan="4">
+            Release Project 1
+            <div class="mt-1 p-0">Due <strong>Sunday October 30th, 11:59pm (ET).</strong></div>
+          </td>
+          <td class="text-center" colspan="4">
+            Release Lab 4: Midterm Review Lab
+            <div class="mt-1 p-0"><strong>Friday October 7th, 9:00am (ET).</strong></div>
+          </td>
+        </tr>
+                  
+        <tr class="exam">
+          <td>Thurs February 25th</td>
+          <td class="text-center" colspan="8">
+            <strong> Midterm Exam (in-person or accommodated)</strong>
+          </td>
+        </tr> 
+
+        <tr class="noclass">
+          <td>Tues, March 2nd</td>
+          <td>No Lab nor Lecture -- Spring Break!</td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr class="noclass">
+          <td>Thurs, March 5th</td>
+          <td>No Lab nor Lecture -- Spring Break!</td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+        
+        <tr class="assignment">
+          <td><strong>, Oct 16th, 11:59pm (ET)</strong></td>
+          <td class="text-center" colspan="8">
+            <strong> Due </strong> Lab 3 :  Multiple Linear Regression Lab 
+          </td>
+        </tr>  
+
+        <tr>
+          <td>Tues, March 10th</td>
+          <td>
+            Fight
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, March 12th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tue, March 17th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, March 19th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tue, March 24th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, March 26th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+
+        <tr>
+          <td>Tues, March 31st</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, April 2nd</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+
+        <tr>
+          <td>Tues, April 7th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+
+        <tr>
+          <td>Thur, April 9th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, April 14th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, April 16th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, April 21st</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, April 23rd</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Tues, April 28th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+        <tr>
+          <td>Thur, April 30th</td>
+          <td>
+            Win
+          </td>
+          <td class="text-center" colspan="8"></td>
+        </tr>
+
+
+
+        <tr class="exam">
+          <td><strong>Mon 4th at 2:00pm - 5:00 pm EDT </strong></td>
+          <td class="text-center" colspan="8">
+            <strong>Final Exam (in-person)</strong>
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <div class="section evaluation-text" id="evaluation" style="padding-top: 3em;">
+      <h4> Student Evaluation and Assessment </h4>
+      <hr>
+      <p id="grading" style="padding-top: 1em;">
+  <strong><b>Grading: </b></strong> 
+        <!--To be announced officially on first day of class. -->
+        <ul> 
+          <li>Homeworks: 25%</li>
+          <li>Labs: 10% </li>
+          <li>Hands-On Activities and Prelabs: 5%</li>
+          <li>Projects (Mid-Semester and Final): 20% </li>
+          <li>Midterm Exam: 15%</li>
+          <li>Final Exam: 25% </li>
+          <li>Class Participation: +% (extra) -- includes synchronous participation and office hours participation.</li>
+        </ul>
+      </p>
+  
+      <p id="homeworks" style="padding-top: 2 em;">
+        <strong><b>Homework: </b></strong>
+        <p>On Tuesday morning at 10:45 am ET, bi-weekly homework based upon course and laboratory notes will be posted via the Assignments feature on the course Canvas Website with Gradescope submission. 
+        These assignments provide exercises based on the material covered in class and provide the foundation for the exams.
+        <br /> <br />The assignments are designed to assess your knowledge on modelling techniques and their mechanics. 
+        These assignments should be done individually or with assistance in Office Hours, include an honor pledge, and be completed by Friday night at 11:59 pm ET, typically a week later. 
+        While there is no time limit for these assignments, they are designed not to take more than 3 days. Homeworks are excellent practice for exams and real-world analysis and should be started early. </p>
+      </p>
+
+        <p id="labs" style="padding-top: 2 em;">
+        <strong><b>Labs: </b></strong>
+        <p>On Tuesday afternoon around 4:00 pm ET, bi-weekly labs based upon course and pre-lab notes will be posted via the course Canvas Website with Gradescope Submission site. 
+        These assignments provide exercises based on the material covered from the lab sessions, the pre-labs and provide the foundation for the lab projects. 
+        <br /> <br />The labs are designed to assess your knowledge on modelling techniques and their mechanics. 
+        These Labs can be done via group work, individually, or with assistance in Office Hours, include an honor pledge, and be completed by Friday night at 11:59 pm ET, typically a week later. 
+        Labs are designed not to take more than 7 days with a moderate amount of effort per day. Laboratory sessions are excellent practice for real-world analysis and should be started when the material is presented. </p>
+      </p>
+  
+      <p id="hands-on activities" style="padding-top: 2 em;">
+        <strong><b>Hands-On Activities: </b></strong>
+        <p>Hands-on activities will be used throughout the course to allow you to practice the methods covered in class, recognize opportunities to apply them in your own work, and discover their shortcomings.
+        Students can still participate in the activities if participating online and will submit their activity on Collab under "Assignments".</p>
+      </p>
+  
+      <p id="projects" style="padding-top: 2 em;">
+        <strong><b>Projects: </b></strong>
+        <p>The class will have two group projects on real-world topics and data sets. These exercises provide a real-world context for what we learn and are open-ended problem solving experiences that illustrate the concepts of modelling and simulation in practice.
+        Hence, they provide the opportunity to demonstrate understanding of class material using real data to solve a goal-directed problem. Projects are designed to teach students how to perform a detailed analysis as well as how to proficiently communicate results as in a technical document and presentation. </p>
+      </p>
+  
+      <p id="Exams" style="padding-top: 2 em;">
+        <strong><b>Exams: </b></strong>
+        <p>Exams are based entirely on classroom notes and discussions, readings, projects, and laboratory assignments. Each exam will be open book requiring analytical problem solving. 
+          The final examination is cumulative. Example questions for both exams are in the in-progress Textbook.</p>
+  </p>
+
+    <div class="section policies-text"  id = "policies" style="padding-top: 4em;">
+  <h4> Course Policies </h4>
+  <hr>
+       <p id="submission" style="padding-top: 2em;">
+  <strong><b>Submission and Late Submission Policy: </b></strong> 
+        <p>On the day any assignment is due you must submit an electronic copy <strong>in pdf (NOT doc or docx, etc.)</strong> along with source code on the GradeScope site and pledge your submission.
+        No late assignments will be accepted in this class, unless the student has procured special accommodations for warranted circumstances. <br />
+        <br /> We will be accommodating also due to exceptional circumstances but this is a large class so please make sure this is truly warranted and contact us as soon as possible.
+        In any case you will do better to submit an incomplete assignment rather than a late one.</p>
+        <!--Please take into account that due to the ongoing pandemic the grading policies of this class have already been relaxed to drop the lowest scored lab from the final
+        grade computations, this includes an assignment with a grade of zero that was not submitted for whatever reason. -->
+      </p>
+      <p id="illness" style="padding-top: 2em;">
+  <strong><b>Illness: </b></strong> 
+        <p>We try to create a safe environment, not only for our students, but also for our faculty and our staff. To that end, please stay home or in 
+          your dorm room if you are ill with or are symptomatic for any communicable disease. We would rather you stay home and work something out with 
+          us for making up work or taking an exam than for an illness to spread through the class. If you believe you are sick, immediately contact Student 
+          Health for appropriate treatment or testing at <a href="https://www.healthyhoos.virginia.edu/">HealthyHoos</a>. </p>
+      </p>
+     
+      </p>
+      <p id="religious" style="padding-top: 2em;">
+  <strong><b>Religious Accommodations: </b></strong> 
+        <p>It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence 
+          when sincerely held religious beliefs or observances conflict with academic requirements.</p>
+        <p>Students who wish to request academic accommodation for a religious observance should submit their request to us by private message on Piazza
+          as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact 
+          the University's Office for Equal Opportunity and Civil Rights (EOCR) at <a href="mailto:UVAEOCR@virginia.edu">UVAEOCR@virginia.edu</a> or 434-924-3200.</p>
+      </p>
+
+      <p id="accessibility" style="padding-top: 2em;">
+  <strong><b>Accessibility Statement: </b></strong> 
+        <p> It is our goal to create a learning experience that is as accessible as possible. 
+          If you anticipate any issues related to the format, materials, or requirements of this course, please meet with us outside of class so we can explore potential options. 
+          Students with disabilities may also wish to work with the Student Disability Access Center (SDAC) to discuss a range of options to removing barriers in this course, 
+          including official accommodations. We are fortunate to have an SDAC advisor, Courtney MacMasters, physically located in Engineering. You may email her at 
+          <a href="mailto:cmacmasters@virginia.edu>cmacmasters@virginia.edu</a> to schedule an appointment. For general questions please visit the SDAC website: <a href="sdac.studenthealth.virginia.edu">sdac.studenthealth.virginia.edu</a>. 
+          If you have already been approved for accommodations through SDAC, please send us your accommodation letter and meet with us so we can develop an implementation plan together.</p>
+      </p>
+      
+       <p id="integrity" style="padding-top: 2em;">
+  <strong><b>Academic Integrity Statement: </b></strong> 
+        <p>"The School of Engineering and Applied Science relies upon and cherishes its community of trust. 
+        We firmly endorse, uphold, and embrace the University's Honor principle that students will not lie, 
+        cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can 
+        destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles 
+        of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. 
+        Students are expected to be familiar with the <a href="http://honor.virginia.edu/academic-fraud">university honor code</a>, 
+        including the section on academic fraud." <br />
+        <br />In summary, if assignments are individual then no two students should submit the same source code -- any overlap in source code of 
+        sufficient similarity will be flagged as failure to abide to the Honor Code. You can discuss, you can share resources, you can talk
+        about the assignment but not share code as this incurs an honor code violation.
+        Regardless of circumstances, we will assume that any source code, text, or images submitted alongside reports or projects are of the authorship
+        of the individual students unless otherwise explicitly stated through appropriate means. Any missing information regarding sources will be regarded
+        as a failure to abide by the academic integrity statement even if that was not the intent. Please be careful clearly stating
+        what is your original work and what is not in all assignments.</p>
+      </p>
+</div>
+      
+<div class="resources-text"  id = "resources" style="padding-top: 4em;">
+  <h4> Additional Resources </h4>
+  <hr>
+      <p id="career" style="padding-top: 2em;">
+      <strong><b>Support for Career Development: </b></strong>
+          <p>Engaging in your career development is an important part of your student experience. For example, presenting at a research conference, 
+             attending an interview for a job or internship, or participating in an extern/shadowing experience are not only necessary steps on your 
+             path but are also invaluable lessons in and of themselves. I wish to encourage and support you in activities related to your career 
+             development. To that end, please notify me by email as far in advance as possible to arrange for appropriate accommodations.</p>
+       </p>
+
+      <p id="support" style="padding-top: 2em;">
+  <strong><b>Student Support Team: </b></strong>
+        <p>You have many resources available to you when you experience academic or personal stresses. In addition to your professors, the School of 
+           Engineering and Applied Science has staff members located in Thornton Hall who you can contact to help manage academic or personal challenges. 
+           Please do not wait until the end of the semester to ask for help!</p>
+  <strong><b>Learning: </b></strong>
+        <div>
+          <span> <a href="mailto:ll4uu@virginia.edu">Lisa Lampe</a>, Director of Undergraduate Education </span>
+        </div>                                  
+        <div>
+          <span> <a href="mailto:bic4sc@virginia.edu">Blake Calhoun</a>, Director of Undergraduate Success </span>
+        </div>
+        <div>
+          <span> <a href="mailto:cmacmasters@virginia.edu">Courtney MacMasters</a>, Accessibility Specialist </span> 
+        </div>
+        <div>
+          <span> <a href="https://engineering.virginia.edu/current-students/current-undergraduate-students/student-support/tutoring">Free tutoring</a> is available for most classes</p> </span>
+        </div>
+   <strong><b>Health and Well-being: </b></strong>
+        <div>
+          <span> <a href="https://engineering.virginia.edu/about/offices/office-graduate-programs/student-support-services#accordion716460">Assistant Dean of Students</a> <span>
+        </div>
+        <div>
+          <span> Elizabeth Ramirez-Weaver, CAPS counselor </span>
+        </div>
+        <div>
+        <span> Katie Fowler, CAPS counselor </span>
+        </div>
+        <p>You may schedule time with the CAPS counselors through <a href="https://www.studenthealth.virginia.edu/getting-started-caps">Student Health</a>. 
+           When scheduling, be sure to specify that you are an Engineering student. You are also urged to use <a href="https://www.studenthealth.virginia.edu/timelycare">TimelyCare</a> 
+           for either scheduled or on-demand 24/7 mental health care.</p>
+   <strong><b>Community and Identity: </b></strong>
+        <p>The Center for Connection in Engineering (COE) is a student space dedicated to connecting groups in Engineering. It exists to 
+        connect students with the academic, financial, health, and community resources they need to thrive both at UVA and in the world. The COE includes
+        an open study area, event space, and staff members on site. Through this space, we affirm and empower participation and provide the resources 
+        necessary for students to be successful during their academic journey and future careers.</p>
+      </p>
+    </div>
+    
+<p id="discrimination" style="padding-top: 2em;">
+  <strong><b>Harassment, Discrimination and Interpersonal Violence:</b></strong>
+<p>The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. 
+  If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website 
+  that describes reporting options and resources available - <a href="www.virginia.edu/sexualviolence">www.virginia.edu/sexualviolence</a>.</p>
+  <p>The same resources and options for individuals who experience sexual misconduct are available for discrimination, harassment, and retaliation.  
+    UVA prohibits discrimination and harassment based on age, color, disability, family medical or genetic information, gender identity or expression, 
+    marital status, military status, national or ethnic origin, political affiliation, pregnancy (including childbirth and related conditions), race, 
+    religion, sex, sexual orientation, veteran status. UVA policy also prohibits retaliation for reporting such behavior. </p>
+<p>If you witness or are aware of someone who has experienced prohibited conduct, you are encouraged to submit a report to Just Report It 
+  (<a href="justreportit.virginia.edu">justreportit.virginia.edu</a>) or contact EOCR, the office of Equal Opportunity and Civil Rights.</p>
+  <p>If you would prefer to disclose such conduct to a confidential resource where what you share is not reported to the University, you can turn to 
+    Counseling & Psychological Services (“CAPS”) and Women’s Center Counseling Staff and Confidential Advocates (for students of all genders).</p>
+<p>As your instructors, know that we care about you and your well-being and stand ready to provide support and resources as we can. As faculty members, we are
+  responsible employees, which means that we are required by University policy and by federal law to report certain kinds of conduct that you report 
+  to us to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and 
+  support that they need, while also determining whether further action is necessary to ensure survivor safety and the safety of the University community. </p>
+</p>
+</div>
+
+  </main>
+</div>
+
+<footer class="page-footer">
+  <p>Department of Systems and Information Engineering @ <a href="http://www.virginia.edu">the University of Virginia</a> ‒ 85 Engineer's Way, Olsson Hall, Charlottesville, VA 22904-4740
+  </p>
+</footer>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</body>
+</html>
+
+<!-- Copyright Gabriel Lawrence - Spring 2025 -->
+<!-- Web template from Dr. Vicente Ordonez & Sonia Baee -->

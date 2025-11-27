@@ -1,0 +1,398 @@
+\documentclass[11pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+\usepackage{lwarp}
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
+
+\CSSFilename{printgithubLaTeX/css/super.css}
+
+% --- Additional Packages ---
+\usepackage{amsmath}      % For math symbols like \chi
+\usepackage{booktabs}     % For professional-looking tables
+\usepackage{longtable}    % For tables that span multiple pages (like the schedule)
+\usepackage{enumitem}     % For list customization
+\usepackage{parskip}      % Use space between paragraphs instead of indentation
+\usepackage{url}          % For formatting URLs
+\usepackage{microtype}    % For better typesetting
+\usepackage{termcal} % For Calendar Capabilities that work with lwarp!
+
+\usepackage{graphicx}     % To include images (logo, headshots)
+\usepackage[dvipsnames,table]{xcolor} % To define custom colors from your CSS
+
+% --- Define colors from super.css ---
+% :root { --primary: #007bff; }
+\definecolor{PrimaryBlue}{HTML}{007bff}
+% .uva-color { color: #E57200; }
+\definecolor{UVAOrange}{HTML}{E57200}
+
+% --- Customize section headings (using titlesec) to use new colors ---
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\Large\bfseries\color{PrimaryBlue}}{}{0em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{}{0em}{}
+
+% Custom commands for styling
+\newcommand{\topic}[1]{\textbf{#1}}
+\newcommand{\due}[1]{\par\smallskip\textit{\footnotesize \textbf{Due:}  #1}}
+\newcommand{\release}[1]{\par\smallskip\textit{\footnotesize \textbf{Release:} #1}}
+\newcommand{\important}[1]{\par\smallskip\textbf{\textsc{#1}}}
+
+% Define a command for the horizontal rule
+\newcommand{\secrule}{\begin{center}\rule{0.5\textwidth}{0.4pt}\end{center}}
+
+\newcommand{\TRClass}{%
+\skipday % Monday (no class)
+\calday[Tuesday]{\classday} % Tuesday
+\skipday % Wednesday (no class)
+\calday[Thursday]{\classday} % Thursday
+\skipday % Friday 
+\skipday\skipday % weekend (no class)
+}
+
+\newcommand{\Holiday}[2]{%
+\options{#1}{\noclassday}
+\caltext{#1}{#2}
+}
+
+% Hyperref must be last
+\usepackage[colorlinks=true, urlcolor=PrimaryBlue, linkcolor=PrimaryBlue, hidelinks]{hyperref}
+
+\date{} % No date
+
+\begin{document}
+
+%=========Title==============%
+\begin{center}
+    % Placeholder for uva-logo.png
+   \includegraphics[width=\linewidth]{images/uva-logo.png}
+    
+    \vspace{0.5cm}
+    
+    {\Huge\bfseries Simulation and Modelling (SYS 3062)}
+    
+    {\Large SYS3062: Modelling and Simulation | Spring 2025}
+\end{center}
+
+\vspace{1cm}
+
+% --- Navigation ---
+\begin{center}
+    \hyperlink{main}{Main} | 
+    \hyperlink{class}{Class Description} | 
+    \hyperlink{schedule}{Schedule} | 
+    \hyperlink{evaluation}{Student Evaluation} | 
+    \hyperlink{policies}{Course Policies}
+\end{center}
+
+\secrule
+
+%=============================%
+\subsection*{Instructional Team}
+
+\begin{center}
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+    \includegraphics[width=\linewidth]{images/Mortveitheadshot.png}
+        \textbf{Professor:} \href{https://engineering.virginia.edu/faculty/henning-s-mortveit}{\textbf{Henning S Mortveit}} (Henning.Mortveit at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
+    \end{minipage}
+    \hfill % space between
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+    \includegraphics[width=\linewidth]{images/GabeCropped.jpg}
+        \textbf{Lab Instructor:} \href{https://www.linkedin.com/in/gabriel-lawrence-ort1/}{\textbf{Gabriel (Gabe) Lawrence}} (gabeL at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
+    \end{minipage}
+    \hfill % space between
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+    \includegraphics[width=\linewidth]{images/maddie.jpeg}
+        \textbf{Undergrad/ME TA:} \href{https://www.linkedin.com/in/madeline-priebe-302386224}{\textbf{Madeline (Maddie) Priebe}} (map7cma at virginia.edu), Office Hours: Tue TBD in TBD Fri 10am-11:30am on TBD.
+    \end{minipage}
+    \hfill % space between
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+       \includegraphics[width=\linewidth]{images/tracey.jpeg}
+        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/tracy-hua/}{\textbf{Tracy Hua}} (njn4gb at virginia.edu), Office Hours: Wed TBD in Olsson TBD.
+    \end{minipage}
+\end{center}
+
+\begin{center}
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+    \includegraphics[width=\linewidth]{images/Saiesha.jpg}
+        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/saiesha-gohil-591618281/}{\textbf{Saiesha Gohil}} (rta5nz at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
+    \end{minipage}
+    \begin{minipage}[t]{0.23\textwidth}
+        \centering
+    \includegraphics[width=\linewidth]{images/Elicook.png}
+        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/elidcook/}{\textbf{Eli Cook}} (ucg8nb at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
+    \end{minipage}
+\end{center}
+%============================%
+
+\vspace{1em}
+\textbf{Class Time:} Tuesday 09:30 AM - 10:45 AM(ET), 05:00 PM - 06:15 PM, and Thursday 9:30 - 10:45 AM (ET)
+
+\textbf{Discussion Forum:} \href{https://piazza.com/class/tbd}{Piazza for SYS 3062}
+
+
+\hypertarget{main}{}
+\hypertarget{class}{}
+\section*{Course Information}
+
+\subsubsection*{Course Description:}
+
+This course is an introduction to theory and practice for modeling
+and simulation, two mainstays of system engineering. The course
+provides a broad foundation covering fundamental principles,
+paradigms, and practices for modeling and analyzing stochastic systems
+through computational experiments, aka \textit{simulations}. It is a course
+integrating theory and practice through lectures and lab sessions
+across topics such as the following:
+
+\begin{itemize}
+    \item Modeling, model verification \& validation, types of uncertainties,
+    with examples of types of models. Modeling and simulation through
+    the lens of stochastic processes.
+
+    \item Techniques theory (SLLN, CLT) for Monte Carlo based simulation
+    analytics (aka "output analysis") used to estimate means and
+    variances of system variables. Statistical independence and lack
+    thereof.
+
+    \item Construction of single confidence intervals with adjustments for
+    skewness. Construction of multiple, simultaneous confidence
+    intervals and the Bonferroni correction.
+
+    \item Estimating sample size to generate confidence intervals with
+    prescribed tolerances.
+
+    \item Spreadsheet-based simulations using the XLRisk plugin.
+
+    \item The process of distribution modeling (aka "input analysis") for
+    capturing random variables of the system. Goodness of fit assessment
+    through the $\chi^2$- and KS-tests. The Phitter tool.
+
+    \item Simulation logic, common data structures, platforms and
+    architectures (e.g., HLA, cloud solutions). Pipelines and
+    workflows. Data management.
+
+    \item Queueing systems.
+
+    \item Random number generators (RNGs) and their role in simulation-based
+    system analysis. Assessing the quality of RNGs. Pitfalls.
+
+    \item Generating variates from distributions other than $U(0,1)$.
+
+    \item Selected topics, e.g., agent-based modelling, state machines,
+    comparing alternative systems, simulation optimization; case
+    studies.
+\end{itemize}
+
+\subsubsection*{Learning Objectives:}
+
+In your professional careers you will undoubtedly encounter projects
+and problems where simulation is an option for a solution. The purpose
+of this course is to provide you with a foundation covering theory and
+practice for stochastic simulations as a method for the design and
+analysis of systems.
+
+\subsubsection*{Prerequisites:}
+
+SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent (you have a question of what is equivalent, please write to Professor Mortveit and Gabe). It is recommended that students have a basic command of linear algebra, calculus, probability, and statistics. We will use Python for simulation and VS Code for our programming sessions. Student are encouraged to familiarize themselves with \href{https://www.datacamp.com/courses/intro-to-python-for-data-science}{Python programming}, \href{https://simpy.readthedocs.io/en/latest/simpy_intro/index.html}{SimPy} or \href{https://salabim.org/manual/salabim.pdf}{Salabim} , and \href{https://code.visualstudio.com/docs}{VS Code}. Some Reviews that may be helpful are available at \href{https://www.youtube.com/playlist?list=PL3nE1Yo1b4CpcEOgS3s80YUys7nGRqVPM}{A Sufficient Review of Probability (APMA 3100) for Engineers} and \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{A Sufficient Review of Statistics (APMA 3120)}.
+
+\subsubsection*{Textbook:}
+
+\textbf{Course text books:}
+\begin{itemize}
+    \item Averill M. Law (2013) Simulation Modeling \& Analysis (5th edition)
+    \item Henning Mortveit and Gabriel Lawrence \textit{Modelling and Simulation}. Available at \href{https://github.com/Gabriel-vzh2vs/Modelling-And-Simulation-Public-Release}{Github}
+\end{itemize}
+
+\textbf{Recommended, supplementary literature:}
+\begin{itemize}
+    \item \href{"https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf"}{Discrete Event Simulation, 5th Edition} by Banks and et. al.
+    \item \href{https://artowen.su.domains/mc/}{Monte Carlo Theory, Methods, and Examples} by Art B. Owen
+    \item \href{https://learning.oreilly.com/library/view/hands-on-simulation-modeling/9781804616888/"}{Hands-On Simulation Modelling with Python} by Giuseppe Ciaburro
+    \item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470317068}{Simulation: A Modeler's Approach} by James R. Thompson.
+    \item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS} by John E. Gibson William T. Scherer, and William F. Gibson
+    \item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241.
+\end{itemize}
+
+\subsection*{Lab}
+The lab is an integral part of the course. The course, mainly in the
+lab, will also cover aspects such as creating and configuring a Python
+environment, a tutorial on the XLRisk Excel plugin, basics of
+debugging in Python, VSCode and Copilot. [Gabe - we can discuss this
+more]
+
+\subsubsection*{Attendance:}
+Official written attendance will not be taken. Quizzes may be administered unannounced during any lecture hour, and online surveys will be conducted in class. A student who misses a quiz will not receive credit and will not be offered a make-up quiz, unless he/she has given prior notification of absence from lecture to me (not the TA).
+
+\subsubsection*{Homework Policies:}
+\begin{enumerate}
+    \item Homework assignments will be assigned throughout the semester.
+    \item Your assignments must be neat and legible, or points will be deducted.
+    \item Your assignments must give details outlining how you got to your solution, or points will not be granted.
+    \item You will upload your homework through Canvas by the due date and time specified. Typed and written assignments are acceptable.
+    \item Use of AI for homework and projects is permitted, provided that its role is clearly defined.
+    \item NO LATE HOMEWORKS WILL BE ACCEPTED WITHOUT PRIOR PERMISSION.
+\end{enumerate}
+
+\subsubsection*{Software}
+Some words about specialized software including Simio, Flexsim,
+Anylogic, and Arena. Our strategy of using Python and XLRisk. That as
+a professional, you may have to become familiar with one of
+these. Also: Brian Park's graduate course uses it.
+
+\hypertarget{schedule}{}
+\section*{Schedule}
+
+\textbf{Disclaimer:} The Instructors reserve the right to make changes to the syllabus, including lab, project, homework, ICPS, and exam due dates. These changes will be announced as early as possible.
+
+\textbf{Final Exam Date:} May 3rd, 2026
+
+% TermCal Goes Here!
+\begin{center}
+\begin{calendar}{1/12/2026}{16} % Semester starts on 1/11/2026 and last for 16
+                    % weeks, excluding finals week
+\setlength{\calboxdepth}{.7in}
+\TRClass
+% schedule
+\caltexton{1}{Lecture \& Lab: Introduction to Modeling and Simulation \\ \release{Homework 1}}
+\caltextnext{1.3, 1.4 Review}
+\caltextnext{Lecture: \\ Lab 1: Computing $\pi$ with Monte Carlo Methods  \\ \release{Lab 1}}
+\caltextnext{Lecture: \\ \due{Homework 1}}
+\caltextnext{Lecture: \\ \release{Homework 2, Lab 2}}
+\caltextnext{Lecture: \\ }
+\caltextnext{Lecture: \\ \release{Lab 3, Lab Project 1}}
+\caltextnext{Lecture: \\}
+\caltextnext{Lecture: \\ \release{Homework 3}}
+\caltextnext{Lecture: }
+\caltextnext{Lecture: \\ \due{Lab Project 1}}
+\caltextnext{Lecture:}
+\caltextnext{\important{Midterm Exam}}
+\caltextnext{Lecture:}
+\caltextnext{Lecture: \\ \release{Homework 4, Lab 4}}
+\caltextnext{Lecture:}
+\caltextnext{Lecture: \\ \release{Lab 5}}
+\caltextnext{Lecture: \\ }
+\caltextnext{Lecture: \\ \release{Lab 6, Homework 5}}
+\caltextnext{Lecture: \\}
+\caltextnext{Lecture: \\ \release{Lab 7, Lab Project 2}}
+\caltextnext{Lecture: \\}
+\caltextnext{Lecture: \\ \release{Lab 8, Homework 6}}
+\caltextnext{Lecture: \\ }
+\caltextnext{Lecture: \\ \important{Lab Group Workday}}
+\caltextnext{Lecture: \\ }
+\caltextnext{Lecture: \\ \important{Lab Project Presentations}}
+\caltextnext{Lecture: \\ }
+\caltextnext{\important{Course Wrapup}}
+
+% Holidays
+\Holiday{1/18/2026}{Martin Luther King Day}
+\Holiday{3/3/2026}{Spring Break}
+\Holiday{3/5/2026}{Spring Break}
+% ... and so on
+
+\end{calendar}
+\end{center}
+
+\hypertarget{evaluation}{}
+\section*{Student Evaluation and Assessment}
+
+\subsubsection*{Grading:}
+\begin{itemize}
+    \item Homeworks: 25\%
+    \item Labs: 10\%
+    \item Hands-On Activities and Prelabs: 5\%
+    \item Projects (Mid-Semester and Final): 20\%
+    \item Midterm Exam: 15\%
+    \item Final Exam: 25\%
+    \item Class Participation: +\% (extra) -- includes synchronous participation and office hours participation.
+\end{itemize}
+
+\subsubsection*{Homework:}
+On Tuesday morning at 10:45 am ET, bi-weekly homework based upon course and laboratory notes will be posted via the Assignments feature on the course Gradescope site. These assignments provide exercises based on the material covered in class and provide the foundation for the exams and projects.
+
+The assignments are designed to assess your knowledge on modelling techniques and their mechanics. These assignments should be done individually or with assistance in Office Hours, include an honor pledge, and be completed by Friday night at 11:59 pm ET, typically a week later. While there is no time limit for these assignments, they are designed not to take more than 3 days. Laboratory sessions are excellent practice for exams and real-world analysis and should be started early.
+
+\subsubsection*{Hands-On Activities:}
+Hands-on activities will be used throughout the course to allow you to practice the methods covered in class, recognize opportunities to apply them in your own work, and discover their shortcomings. Students can still participate in the activities if participating online and will submit their activity on Collab under "Assignments".
+
+\subsubsection*{Projects:}
+The class will have two group projects on real-world topics and data sets. These exercises provide a real-world context for what we learn and are open-ended problem solving experiences that illustrate the concepts of modelling and simulation in practice. Hence, they provide the opportunity to demonstrate understanding of class material using real data to solve a goal-directed problem. Projects are designed to teach students how to perform a detailed analysis as well as how to proficiently communicate results as in a technical document and presentation.
+
+\subsubsection*{Exams:}
+Exams are based entirely on classroom notes and discussions, readings, projects, and laboratory assignments. Each exam will be open book requiring analytical problem solving. The final examination is cumulative. Example questions for both exams are in the in-progress Textbook.
+
+\hypertarget{policies}{}
+\section*{Course Policies}
+
+\subsubsection*{Submission and Late Submission Policy:}
+On the day any assignment is due you must submit an electronic copy \textbf{in pdf (NOT doc or docx, etc.)} along with source code on the GradeScope site and pledge your submission. No late assignments will be accepted in this class, unless the student has procured special accommodations for warranted circumstances.
+
+We will be accommodating also due to exceptional circumstances but this is a large class so please make sure this is truly warranted and contact us as soon as possible. In any case you will do better to submit an incomplete assignment rather than a late one.
+
+\subsubsection*{Illness:}
+We try to create a safe environment, not only for our students, but also for our faculty and our staff. To that end, please stay home or in your dorm room if you are ill with or are symptomatic for any communicable disease. We would rather you stay home and work something out with us for making up work or taking an exam than for an illness to spread through the class. If you believe you are sick, immediately contact Student Health for appropriate treatment or testing at \href{https://www.healthyhoos.virginia.edu/}{HealthyHoos}.
+
+\subsubsection*{Religious Accommodations:}
+It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.
+
+Students who wish to request academic accommodation for a religious observance should submit their request to us by private message on Piazza as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \href{mailto:UVAEOCR@virginia.edu}{UVAEOCR@virginia.edu} or 434-924-3200.
+
+\subsubsection*{Accessibility Statement:}
+It is our goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with us outside of class so we can explore potential options. Students with disabilities may also wish to work with the Student Disability Access Center (SDAC) to discuss a range of options to removing barriers in this course, including official accommodations. We are fortunate to have an SDAC advisor, Courtney MacMasters, physically located in Engineering. You may email her at \href{mailto:cmacmasters@virginia.edu}{cmacmasters@virginia.edu} to schedule an appointment. For general questions please visit the SDAC website: \url{sdac.studenthealth.virginia.edu}. If you have already been approved for accommodations through SDAC, please send us your accommodation letter and meet with us so we can develop an implementation plan together.
+
+\subsubsection*{Academic Integrity Statement:}
+"The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the \href{http://honor.virginia.edu/academic-fraud}{university honor code}, including the section on academic fraud."
+
+In summary, if assignments are individual then no two students should submit the same source code -- any overlap in source code of sufficient similarity will be flagged as failure to abide to the Honor Code. You can discuss, you can share resources, you can talk about the assignment but not share code as this incurs an honor code violation. Regardless of circumstances, we will assume that any source code, text, or images submitted alongside reports or projects are of the authorship of the individual students unless otherwise explicitly stated through appropriate means. Any missing information regarding sources will be regarded as a failure to abide by the academic integrity statement even if that was not the intent. Please be careful clearly stating what is your original work and what is not in all assignments.
+
+\section*{Additional Resources}
+
+\subsubsection*{Support for Career Development:}
+Engaging in your career development is an important part of your student experience. For example, presenting at a research conference, attending an interview for a job or internship, or participating in an extern/shadowing experience are not only necessary steps on your path but are also invaluable lessons in and of themselves. I wish to encourage and support you in activities related to your career development. To that end, please notify me by email as far inadvance as possible to arrange for appropriate accommodations.
+
+\subsubsection*{Student Support Team:}
+You have many resources available to you when you experience academic or personal stresses. In addition to your professors, the School of Engineering and Applied Science has staff members located in Thornton Hall who you can contact to help manage academic or personal challenges. Please do not wait until the end of the semester to ask for help!
+
+\textbf{Learning:}
+\begin{itemize}
+    \item \href{mailto:ll4uu@virginia.edu}{Lisa Lampe}, Director of Undergraduate Education
+    \item \href{mailto:bic4sc@virginia.edu}{Blake Calhoun}, Director of Undergraduate Success
+    \item \href{mailto:cmacmasters@virginia.edu}{Courtney MacMasters}, Accessibility Specialist
+    \item \href{https://engineering.virginia.edu/current-students/current-undergraduate-students/student-support/tutoring}{Free tutoring} is available for most classes
+\end{itemize}
+
+\textbf{Health and Well-being:}
+\begin{itemize}
+    \item \href{https://engineering.virginia.edu/about/offices/office-graduate-programs/student-support-services#accordion716460}{Assistant Dean of Students}
+    \item Elizabeth Ramirez-Weaver, CAPS counselor
+    \item Katie Fowler, CAPS counselor
+\end{itemize}
+You may schedule time with the CAPS counselors through \href{https://www.studenthealth.virginia.edu/getting-started-caps}{Student Health}. When scheduling, be sure to specify that you are an Engineering student. You are also urged to use \href{https://www.studenthealth.virginia.edu/timelycare}{TimelyCare} for either scheduled or on-demand 24/7 mental health care.
+
+\subsubsection*{Community and Identity:}
+The Center for Connection in Engineering (CCE) is a student space dedicated to connecting groups in Engineering. It exists to connect students with the academic, financial, health, and community resources they need to thrive both at UVA and in the world. The CCE includes an open study area, event space, and staff members on site. Through this space, we affirm and empower participation and provide the resources necessary for students to be successful during their academic journey and future careers.
+
+\subsubsection*{Harassment, Discrimination and Interpersonal Violence:}
+The University of Virginia is dedicated to providing a safe and equitable learning environment for all students. If you or someone you know has been affected by power-based personal violence, more information can be found on the UVA Sexual Violence website that describes reporting options and resources available - \href{http://www.virginia.edu/sexualviolence}{www.virginia.edu/sexualviolence}.
+
+The same resources and options for individuals who experience sexual misconduct are available for discrimination, harassment, and retaliation. UVA prohibits discrimination and harassment based on age, color, disability, family medical or genetic information, gender identity or expression, marital status, military status, national or ethnic origin, political affiliation, pregnancy (including childbirth and related conditions), race, religion, sex, sexual orientation, veteran status. UVA policy also prohibits retaliation for reporting such behavior.
+
+If you witness or are aware of someone who has experienced prohibited conduct, you are encouraged to submit a report to Just Report It (\href{http://justreportit.virginia.edu}{justreportit.virginia.edu}) or contact EOCR, the office of Equal Opportunity and Civil Rights.
+
+If you would prefer to disclose such conduct to a confidential resource where what you share is not reported to the University, you can turn to Counseling \& Psychological Services (“CAPS”) and Women’s Center Counseling Staff and Confidential Advocates (for students of all genders).
+
+As your instructors, know that we care about you and your well-being and stand ready to provide support and resources as we can. As faculty members, we are responsible employees, which means that we are required by University policy and by federal law to report certain kinds of conduct that you report to us to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also determining whether further action is necessary to ensure survivor safety and the safety of the University community.
+
+\secrule
+\begin{center}
+    \small
+    Department of Systems and Information Engineering @ \href{http://www.virginia.edu}{the University of Virginia} ‒ 85 Engineer's Way, Olsson Hall, Charlottesville, VA 22904-4740
+\end{center}
+
+\end{document}
