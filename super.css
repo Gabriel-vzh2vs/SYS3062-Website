@@ -481,8 +481,6 @@ span.pub_info, span.pub_info a{
 .page-footer p:last-child {
   margin-bottom: 0;
 }
-<<<<<<< HEAD
-=======
 /* The main container */
 .team-grid {
     display: flex;
@@ -665,4 +663,3 @@ span.pub_info, span.pub_info a{
 
 .spacer-large { height: 100px; }
 .spacer-small { height: 20px; }
->>>>>>> 6c61037 (Hopefully this works!)
