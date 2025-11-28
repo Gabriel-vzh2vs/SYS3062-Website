@@ -1,0 +1,6 @@
+pdfseparate -f %1 -l %1 %4_html.pdf staging-images/lateximagetemp-%%d.pdf
+pdfcrop --hires --margins '0 1 0 0' staging-images/lateximagetemp-%1.pdf staging-images/%3.pdf
+pdftocairo -svg -noshrink staging-images/%3.pdf staging-images/%3.svg
+del staging-images/%3.pdf
+del staging-images/lateximagetemp-%1.pdf
+exit
