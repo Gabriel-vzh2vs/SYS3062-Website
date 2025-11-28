@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 22:35
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1787,18 +1787,19 @@ Requested font "cmr8" at 8.0pt
 Requested font "cmr6" at 6.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr6.tfm
  [3]
+Requested font "ecrm0900" at 9.0pt
+ -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
+
+
+LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 295.
+
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/sc' undefined
 (Font)              using `T1/OpenSans(0)/m/n' instead on input line 317.
 
 Requested font "ecrm1000" at 10.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
-Requested font "ecrm0900" at 9.0pt
- -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
-
-LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 317.
-
 
 Overfull \hbox (4.84323pt too wide) in paragraph at lines 317--317
 []|  []
@@ -1912,10 +1913,10 @@ Package rerunfilecheck Info: File `staging.out' has not changed.
 Here is how much of TeX's memory you used:
  18615 strings out of 476689
  359424 string characters out of 5806612
- 1865018 words of memory out of 6000000
+ 1867018 words of memory out of 6000000
  38341 multiletter control sequences out of 15000+600000
  519945 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 87i,15n,111p,1196b,652s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 87i,15n,111p,1196b,664s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on staging.pdf (10 pages).

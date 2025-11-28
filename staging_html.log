@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 21:12
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 23:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2069,7 +2069,12 @@ Requested font "[OpenSans-Italic.ttf]/OT:script=latn;language=dflt;+liga;+tnum;
 +lnum;mapping=tex-text;" at 8.54997pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Ita
 lic.ttf
- [14] [15] [16] [17] [18] [19]
+ [14] [15] [16] [17] [18]
+
+LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 295.
+
+[19]
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/sc' undefined
 (Font)              using `T1/OpenSans(0)/m/n' instead on input line 317.
@@ -2081,10 +2086,6 @@ LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/sc' undefined
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
 (Font)              using `T1/OpenSans(0)/m/it' instead on input line 317.
-
-
-LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 317.
 
 
 LaTeX Font Warning: Font shape `TU/OpenSans(0)/m/sc' undefined
@@ -2159,10 +2160,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 Here is how much of TeX's memory you used:
  16259 strings out of 476689
  357808 string characters out of 5806612
- 1877018 words of memory out of 6000000
+ 1878018 words of memory out of 6000000
  35826 multiletter control sequences out of 15000+600000
  519101 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 108i,6n,120p,1064b,1122s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 108i,6n,120p,1064b,1158s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on staging_html.pdf (44 pages).
