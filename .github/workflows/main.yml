@@ -26,12 +26,14 @@ jobs:
       - name: Compile LaTeX to HTML using Docker
         # We use the official TeX Live image which includes lwarp.
         # We mount the current workspace to /data in the container.
+        # We explicitly remove staging.html and clean lwarp to ensure a fresh build
+        # even if an old file was committed from an Overleaf export.
         run: |
           docker run --rm \
           -v "${{ github.workspace }}:/data" \
           -w /data \
           texlive/texlive:latest \
-          /bin/bash -c "tlmgr install lwarp && lwarpmk html"
+          /bin/bash -c "tlmgr install lwarp && rm -f staging.html && lwarpmk clean && lwarpmk html"
 
       - name: Prepare Site Directory
         run: |
@@ -77,4 +79,5 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
+        uses: actions/deploy-pages@v4
         uses: actions/deploy-pages@v4
