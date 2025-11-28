@@ -1,12 +1,10 @@
 \documentclass[11pt, a4paper]{article}
-\usepackage{fontspec}
-\usepackage[english, bidi=basic, provide=*]{babel}
-\babelprovide[import, onchar=ids fonts]{english}
-\babelfont{rm}{Noto Sans}
+\usepackage[default,scale=0.95]{opensans}
+\usepackage[T1]{fontenc}
 \usepackage{lwarp}
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2cm, right=2cm]{geometry}
 
-\CSSFilename{printgithubLaTeX/css/super.css}
+\CSSFilename{super.css}
 
 % --- Additional Packages ---
 \usepackage{amsmath}      % For math symbols like \chi
@@ -19,7 +17,7 @@
 \usepackage{termcal} % For Calendar Capabilities that work with lwarp!
 
 \usepackage{graphicx}     % To include images (logo, headshots)
-\usepackage[dvipsnames,table]{xcolor} % To define custom colors from your CSS
+\usepackage[dvipsnames,table]{xcolor} 
 
 % --- Define colors from super.css ---
 % :root { --primary: #007bff; }
@@ -91,44 +89,44 @@
 %=============================%
 \subsection*{Instructional Team}
 
-\begin{center}
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-    \includegraphics[width=\linewidth]{images/Mortveitheadshot.png}
-        \textbf{Professor:} \href{https://engineering.virginia.edu/faculty/henning-s-mortveit}{\textbf{Henning S Mortveit}} (Henning.Mortveit at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
-    \end{minipage}
-    \hfill % space between
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-    \includegraphics[width=\linewidth]{images/GabeCropped.jpg}
-        \textbf{Lab Instructor:} \href{https://www.linkedin.com/in/gabriel-lawrence-ort1/}{\textbf{Gabriel (Gabe) Lawrence}} (gabeL at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
-    \end{minipage}
-    \hfill % space between
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-    \includegraphics[width=\linewidth]{images/maddie.jpeg}
-        \textbf{Undergrad/ME TA:} \href{https://www.linkedin.com/in/madeline-priebe-302386224}{\textbf{Madeline (Maddie) Priebe}} (map7cma at virginia.edu), Office Hours: Tue TBD in TBD Fri 10am-11:30am on TBD.
-    \end{minipage}
-    \hfill % space between
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-       \includegraphics[width=\linewidth]{images/tracey.jpeg}
-        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/tracy-hua/}{\textbf{Tracy Hua}} (njn4gb at virginia.edu), Office Hours: Wed TBD in Olsson TBD.
-    \end{minipage}
-\end{center}
+% \begin{center}
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%     \includegraphics[width=\linewidth]{images/Mortveitheadshot.png}
+%         \textbf{Professor:} \href{https://engineering.virginia.edu/faculty/henning-s-mortveit}{\textbf{Henning S Mortveit}} (Henning.Mortveit at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
+%     \end{minipage}
+%     \hfill % space between
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%     \includegraphics[width=\linewidth]{images/GabeCropped.jpg}
+%         \textbf{Lab Instructor:} \href{https://www.linkedin.com/in/gabriel-lawrence-ort1/}{\textbf{Gabriel (Gabe) Lawrence}} (gabeL at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
+%     \end{minipage}
+%     \hfill % space between
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%     \includegraphics[width=\linewidth]{images/maddie.jpeg}
+%         \textbf{Undergrad/ME TA:} \href{https://www.linkedin.com/in/madeline-priebe-302386224}{\textbf{Madeline (Maddie) Priebe}} (map7cma at virginia.edu), Office Hours: Tue TBD in TBD Fri 10am-11:30am on TBD.
+%     \end{minipage}
+%     \hfill % space between
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%        \includegraphics[width=\linewidth]{images/tracey.jpeg}
+%         \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/tracy-hua/}{\textbf{Tracy Hua}} (njn4gb at virginia.edu), Office Hours: Wed TBD in Olsson TBD.
+%     \end{minipage}
+% \end{center}
 
-\begin{center}
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-    \includegraphics[width=\linewidth]{images/Saiesha.jpg}
-        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/saiesha-gohil-591618281/}{\textbf{Saiesha Gohil}} (rta5nz at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
-    \end{minipage}
-    \begin{minipage}[t]{0.23\textwidth}
-        \centering
-    \includegraphics[width=\linewidth]{images/Elicook.png}
-        \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/elidcook/}{\textbf{Eli Cook}} (ucg8nb at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
-    \end{minipage}
-\end{center}
+% \begin{center}
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%     \includegraphics[width=\linewidth]{images/Saiesha.jpg}
+%         \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/saiesha-gohil-591618281/}{\textbf{Saiesha Gohil}} (rta5nz at virginia.edu), Office Hours: TBD in Olsson 102A Thur TBD on TBD
+%     \end{minipage}
+%     \begin{minipage}[t]{0.23\textwidth}
+%         \centering
+%     \includegraphics[width=\linewidth]{images/Elicook.png}
+%         \textbf{Undergraduate TA:} \href{https://www.linkedin.com/in/elidcook/}{\textbf{Eli Cook}} (ucg8nb at virginia.edu), Office Hours: TBD in Olsson TND, Thur 10:30am-12pm on Zoom.
+%     \end{minipage}
+% \end{center}
 %============================%
 
 \vspace{1em}
