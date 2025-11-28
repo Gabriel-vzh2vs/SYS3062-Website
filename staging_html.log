@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 19:55
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 20:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1988,21 +1988,21 @@ ular.ttf
 ] [2] [3]
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/n' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 110.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 149.
 
 [4] [5]
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/it' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 183.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 222.
 
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 208.
+(Font)              scaled to size 7.59998pt on input line 247.
 Requested font "[OpenSans-Regular.ttf]/OT:script=latn;language=dflt;+liga;+tnum
 ;+lnum;mapping=tex-text;" at 7.59998pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Reg
 ular.ttf
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 208.
+(Font)              scaled to size 5.69998pt on input line 247.
 Requested font "[OpenSans-Regular.ttf]/OT:script=latn;language=dflt;+liga;+tnum
 ;+lnum;mapping=tex-text;" at 5.69998pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Reg
@@ -2039,7 +2039,7 @@ File: lwarp_baseline_marker.png Graphic file (type bmp)
 File: lwarp_baseline_marker.png Graphic file (type bmp)
 <lwarp_baseline_marker.png>
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 4.74998pt on input line 208.
+(Font)              scaled to size 4.74998pt on input line 247.
 Requested font "[OpenSans-Regular.ttf]/OT:script=latn;language=dflt;+liga;+tnum
 ;+lnum;mapping=tex-text;" at 4.74998pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Reg
@@ -2064,34 +2064,34 @@ File: lwarp_baseline_marker.png Graphic file (type bmp)
 <lwarp_baseline_marker.png>
  [9] [10] [11] [12]
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/it' will be
-(Font)              scaled to size 8.54997pt on input line 243.
+(Font)              scaled to size 8.54997pt on input line 282.
 Requested font "[OpenSans-Italic.ttf]/OT:script=latn;language=dflt;+liga;+tnum;
 +lnum;mapping=tex-text;" at 8.54997pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Ita
 lic.ttf
- [13] [14] [15] [16] [17] [18]
+ [13] [14] [15] [16] [17]
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/sc' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/sc' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `TU/OpenSans(0)/m/sc' undefined
-(Font)              using `TU/OpenSans(0)/m/n' instead on input line 323.
+(Font)              using `TU/OpenSans(0)/m/n' instead on input line 352.
 
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/sc' will be
-(Font)              scaled to size 10.40245pt on input line 323.
+(Font)              scaled to size 10.40245pt on input line 352.
 File: lwarp_baseline_marker.png Graphic file (type bmp)
 <lwarp_baseline_marker.png>
 File: lwarp_baseline_marker.png Graphic file (type bmp)
@@ -2100,49 +2100,49 @@ File: lwarp_baseline_marker.png Graphic file (type bmp)
 <lwarp_baseline_marker.png>
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/scit' undefined
-(Font)              using `T1/OpenSans(0)/m/it' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/it' instead on input line 352.
 
-[19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
+[18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28] [29] [30] [31]
 Missing character: There is no ’ ("2019) in font ecrm0900!
 [32] [33] [34] [35] [36]
 Missing character: There is no “ ("201C) in font ecrm0900!

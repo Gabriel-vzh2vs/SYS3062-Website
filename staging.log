@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 19:57
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2025.11.10)  27 NOV 2025 20:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1699,10 +1699,10 @@ Requested font "ecrm1440" at 14.4pt
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/n' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 79.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 90.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 79--79
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 |\T1/OpenSans(0)/m/n/14.4 Simulation and Mod-elling (SYS 3062) | Spring 2026|
  []
 
@@ -1724,15 +1724,15 @@ File: images/tracey.jpeg Graphic file (type bmp)
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/it' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 183.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 222.
 
 LaTeX Font Info:    Trying to load font information for TS1+OpenSans(0) on inpu
-t line 188.
-LaTeX Font Info:    No file TS1OpenSans(0).fd. on input line 188.
+t line 227.
+LaTeX Font Info:    No file TS1OpenSans(0).fd. on input line 227.
 
 LaTeX Font Warning: Font shape `TS1/OpenSans(0)/m/n' undefined
 (Font)              using `TS1/cmr/m/n' instead
-(Font)              for symbol `textbullet' on input line 188.
+(Font)              for symbol `textbullet' on input line 227.
 
 Requested font "tcrm1095" at 10.95pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
@@ -1749,13 +1749,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 208.
+(Font)              scaled to size 7.59998pt on input line 247.
 Requested font "[OpenSans-Regular.ttf]/OT:script=latn;language=dflt;+liga;+tnum
 ;+lnum;mapping=tex-text;" at 7.59998pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Reg
 ular.ttf
 LaTeX Font Info:    Font shape `TU/OpenSans(0)/m/n' will be
-(Font)              scaled to size 5.69998pt on input line 208.
+(Font)              scaled to size 5.69998pt on input line 247.
 Requested font "[OpenSans-Regular.ttf]/OT:script=latn;language=dflt;+liga;+tnum
 ;+lnum;mapping=tex-text;" at 5.69998pt
  -> /usr/share/texlive/texmf-dist/fonts/truetype/ascender/opensans/OpenSans-Reg
@@ -1787,7 +1787,7 @@ Requested font "cmr6" at 6.0pt
  [3]
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/m/sc' undefined
-(Font)              using `T1/OpenSans(0)/m/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/m/n' instead on input line 352.
 
 Requested font "ecrm1000" at 10.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm1000.tfm
@@ -1795,95 +1795,95 @@ Requested font "ecrm0900" at 9.0pt
  -> /usr/share/texlive/texmf-dist/fonts/tfm/jknappen/ec/ecrm0900.tfm
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/it' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 352.
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
 LaTeX Font Warning: Font shape `T1/OpenSans(0)/b/sc' undefined
-(Font)              using `T1/OpenSans(0)/b/n' instead on input line 323.
+(Font)              using `T1/OpenSans(0)/b/n' instead on input line 352.
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 
-Overfull \hbox (4.84323pt too wide) in paragraph at lines 323--323
+Overfull \hbox (4.84323pt too wide) in paragraph at lines 352--352
 []|  []
  []
 
 [4] [5] [6] [7]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
-81.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 4
+20.
  (/usr/share/texlive/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1911,7 +1911,7 @@ Package rerunfilecheck Info: File `staging.out' has not changed.
 Here is how much of TeX's memory you used:
  18615 strings out of 476689
  359424 string characters out of 5806612
- 1866018 words of memory out of 6000000
+ 1864018 words of memory out of 6000000
  38341 multiletter control sequences out of 15000+600000
  519945 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
