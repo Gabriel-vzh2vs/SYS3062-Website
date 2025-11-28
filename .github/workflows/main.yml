@@ -1,4 +1,4 @@
-name: Build Lwarp HTML and Deploy
+name: Build Lwarp HTML and Deploy v2
 
 on:
   push:
@@ -26,14 +26,14 @@ jobs:
       - name: Compile LaTeX to HTML using Docker
         # We use the official TeX Live image which includes lwarp.
         # We mount the current workspace to /data in the container.
-        # We explicitly remove staging.html and clean lwarp to ensure a fresh build
-        # even if an old file was committed from an Overleaf export.
+        # We explicitly remove staging.html and clean lwarp to ensure a fresh build.
+        # ADDED: Installation of poppler-utils via apt-get to fix the "Ensure that the Poppler utilities are installed" error.
         run: |
           docker run --rm \
           -v "${{ github.workspace }}:/data" \
           -w /data \
           texlive/texlive:latest \
-          /bin/bash -c "tlmgr install lwarp && rm -f staging.html && lwarpmk clean && lwarpmk html"
+          /bin/bash -c "apt-get update && apt-get install -y poppler-utils && tlmgr install lwarp && rm -f staging.html && lwarpmk clean && lwarpmk html"
 
       - name: Prepare Site Directory
         run: |
