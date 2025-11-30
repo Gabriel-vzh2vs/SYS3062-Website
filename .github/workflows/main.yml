@@ -1,4 +1,4 @@
-name: Build Lwarp HTML and Deploy v2
+name: Build Lwarp HTML and Deploy v3
 
 on:
   push:
@@ -27,13 +27,14 @@ jobs:
         # We use the official TeX Live image which includes lwarp.
         # We mount the current workspace to /data in the container.
         # We explicitly remove staging.html and clean lwarp to ensure a fresh build.
-        # ADDED: Installation of poppler-utils via apt-get to fix the "Ensure that the Poppler utilities are installed" error.
+        # ADDED: Installation of poppler-utils via apt-get.
+        # ADDED: Explicit 'tlmgr option repository' to use a Tier 1 mirror (Utah) to avoid "remote database older" errors.
         run: |
           docker run --rm \
           -v "${{ github.workspace }}:/data" \
           -w /data \
           texlive/texlive:latest \
-          /bin/bash -c "apt-get update && apt-get install -y poppler-utils && tlmgr install lwarp && rm -f staging.html && lwarpmk clean && lwarpmk html"
+          /bin/bash -c "apt-get update && apt-get install -y poppler-utils && tlmgr option repository https://ctan.math.utah.edu/ctan/tex-archive/systems/texlive/tlnet && tlmgr install lwarp && rm -f staging.html && lwarpmk clean && lwarpmk html"
 
       - name: Prepare Site Directory
         run: |
