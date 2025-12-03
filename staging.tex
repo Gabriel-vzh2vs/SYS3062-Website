@@ -36,6 +36,10 @@
 \newcommand{\release}[1]{\par\smallskip\textit{\footnotesize \textbf{Release:} #1}}
 \newcommand{\important}[1]{\par\smallskip\textbf{\textsc{#1}}}
 
+\renewcommand\labelitemi{\rule[0.1em]{0.4em}{0.4em}}
+\renewcommand\labelitemii{\rule[0.1em]{0.3em}{0.3em}}
+
+
 % For the Website Version, If you want color.
 \newcommand{\Exam}[1]{\InlineClass{cal-exam}{#1}}
 \newcommand{\Holiday}[1]{\InlineClass{cal-holiday}{#1}}
@@ -168,24 +172,25 @@
 \secrule
 
 \vspace{1em}
-\textbf{Class Time:} Tuesday 09:30 AM - 10:45 AM (ET), 05:00 PM - 06:15 PM (ET), and Thursday 9:30 - 10:45 AM (ET)
+\textbf{\Large Class Time/Rooms:} 
 
-\textbf{Discussion Forum:} \href{https://piazza.com/class/tbd}{Piazza for SYS 3062}
+\qquad
+\begin{tabular}{llll}
+Tuesday &  09:30 AM - 10:45 AM & Lecture & Thornton 316\\
+Tuesday &  05:00 PM - 06:15 PM & Lab     & Olsson 120  \\
+Thursday & 09:30 AM - 10:45 AM & Lecture & Thornton 316
+\end{tabular}
+
+\textbf{\Large Discussion Forum:} \\
+\phantom{\qquad}\href{https://piazza.com/class/tbd}{Piazza for SYS 3062}
 
 \hypertarget{class}{}
 \section*{Course Information}
 
-\secrule
+%%\secrule
+%%\subsubsection*{Course Description:}
 
-\subsubsection*{Course Description:}
-
-This course is an introduction to theory and practice for modeling
-and simulation, two mainstays of system engineering. The course
-provides a broad foundation covering fundamental principles,
-paradigms, and practices for modeling and analyzing stochastic systems
-through computational experiments, aka \textit{simulations}. It is a course
-integrating theory and practice through lectures and lab sessions
-across topics such as the following:
+This course is an introduction to theory and practice for modeling and simulation, two mainstays of system engineering. The course provides a broad foundation covering fundamental principles, paradigms, and practices for modeling and analyzing stochastic systems through computational experiments, aka \textit{simulations}. It is a course integrating theory and practice through lectures and lab sessions across topics such as the following:
 
 \begin{itemize}
     \item Modeling, model verification \& validation, types of uncertainties,
@@ -226,7 +231,7 @@ across topics such as the following:
     studies.
 \end{itemize}
 
-\subsubsection*{Learning Objectives:}
+\subsection*{Learning Objectives:}
 
 In your professional careers you will undoubtedly encounter projects
 and problems where simulation is an option for a solution. The purpose
@@ -234,7 +239,7 @@ of this course is to provide you with a foundation covering theory and
 practice for stochastic simulations as a method for the design and
 analysis of systems.
 
-\subsubsection*{Prerequisites:}
+\subsection*{Prerequisites:}
 
 SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent (you have a question of what is equivalent, please write to Professor Mortveit and Gabe). It is recommended that students have a basic command of linear algebra, calculus, probability, and statistics. We will use Python for simulation and VS Code for our programming sessions. Student are encouraged to familiarize themselves with \href{https://www.datacamp.com/courses/intro-to-python-for-data-science}{Python programming}, \href{https://simpy.readthedocs.io/en/latest/simpy_intro/index.html}{SimPy} or \href{https://salabim.org/manual/salabim.pdf}{Salabim}, and \href{https://code.visualstudio.com/docs}{VS Code}. Some Resources that may be helpful are available at \href{https://www.youtube.com/playlist?list=PL3nE1Yo1b4CpcEOgS3s80YUys7nGRqVPM}{A Sufficient Review of Probability for Engineers (APMA 3100)} and \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{A Sufficient Review of Statistics (APMA 3120)}.
 
