@@ -221,52 +221,85 @@ This course is an introduction to theory and practice for modeling and simulatio
     \item Random number generators (RNGs) and their role in simulation-based
     system analysis. Assessing the quality of RNGs. Pitfalls.
 
-    \item Generating variates from distributions other than \(U(0,1) \).
+    \item Generating variates from distributions other than $U(0,1)$.
 
     \item Selected topics, e.g., agent-based modeling, state machines,
     comparing alternative systems, simulation optimization; case
     studies.
 \end{itemize}
 
-\subsection*{Learning Objectives:}
+\subsection*{Learning Objectives}
 
-In your professional careers you will undoubtedly encounter projects
-and problems where simulation is an option for a solution. The purpose
-of this course is to provide you with a foundation covering theory and
-practice for stochastic simulations as a method for the design and
-analysis of systems.
-
-\subsection*{Prerequisites:}
-
-SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent (you have a question of what is equivalent, please write to Professor Mortveit and Gabe). It is recommended that students have a basic command of linear algebra, calculus, probability, and statistics. We will use Python for simulation and VS Code for our programming sessions. Student are encouraged to familiarize themselves with \href{https://www.datacamp.com/courses/intro-to-python-for-data-science}{Python programming}, \href{https://simpy.readthedocs.io/en/latest/simpy_intro/index.html}{SimPy} or \href{https://salabim.org/manual/salabim.pdf}{Salabim}, and \href{https://code.visualstudio.com/docs}{VS Code}. Some Resources that may be helpful are available at \href{https://www.youtube.com/playlist?list=PL3nE1Yo1b4CpcEOgS3s80YUys7nGRqVPM}{A Sufficient Review of Probability for Engineers (APMA 3100)} and \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{A Sufficient Review of Statistics (APMA 3120)}.
-
-\begin{BlockClass}{content-box}
-\subsubsection*{Textbook:}
-
+In your professional career you will undoubtedly encounter projects and problems where simulation can provide insights and solutions. Through this course you will get a foundation of theory and
+practice for simulation-based system analysis allowing you to:
 \begin{itemize}
-    \item Averill M. Law (2013) Simulation Modeling \& Analysis (5th edition)
-    \item Henning Mortveit and Gabriel Lawrence \textit{Modelling and Simulation}. Available at \href{https://github.com/Gabriel-vzh2vs/Modelling-And-Simulation-Public-Release}{Github}
+\item Determine if \& when simulation is a sound approach
+\item Conduct validation and verification with respect to a simulation-based system analysis
+\item Perform output analyses and determine means and confidence intervals of system variables using the Monte Carlo method. Be able to determine if conditions such as independence are satisfied and assess if adjustments are needed due to, e.g., skewness.
+\item Perform distribution modeling to capture random variables in a stochastic model and evaluate its quality statistically through, e.g., the KS-test.
+\item Develop sampling techniques for non-standard distributions.
+\item Assess quality of random number and random variate generators, and be able to detect basic anomalies.
+\item Model and analyze queuing systems.
+\item Apply the Monte Carlo method in spreadsheet-based simulation models using the XLRisk plugin.
 \end{itemize}
 
-\textbf{Supplementary literature:}
+\subsection*{Prerequisites}
+
+Official prerequisites are: SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent courses. Key knowledge coming into the course includes calculus, probability, basic mathematical modeling, and programming. Other course such as linear algebra and differential equations will helpful, but are not required. In this course, we will focus on Python. 
+
+Some resources that can be helpful include:
 \begin{itemize}
-    \item \href{"https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf"}{Discrete Event Simulation, 5th Edition} by Banks and et. al.
-    \item \href{https://artowen.su.domains/mc/}{Monte Carlo Theory, Methods, and Examples} by Art B. Owen
-    \item \href{https://learning.oreilly.com/library/view/hands-on-simulation-modeling/9781804616888/"}{Hands-On Simulation Modelling with Python} by Giuseppe Ciaburro
-    \item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470317068}{Simulation: A Modeler's Approach} by James R. Thompson.
-    \item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS} by John E. Gibson William T. Scherer, and William F. Gibson
-    \item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241.
+\item  \href{https://www.datacamp.com/courses/intro-to-python-for-data-science}{Python programming} 
+
+\item \href{https://simpy.readthedocs.io/en/latest/simpy_intro/index.html}{SimPy} or \href{https://salabim.org/manual/salabim.pdf}{Salabim}
+
+\item \href{https://code.visualstudio.com/docs}{VS Code}. 
+
+\item \href{https://www.youtube.com/playlist?list=PL3nE1Yo1b4CpcEOgS3s80YUys7nGRqVPM}{A Sufficient Review of Probability for Engineers (APMA 3100)} 
+
+\item \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{A Sufficient Review of Statistics (APMA 3120)}.
+\end{itemize}
+
+
+\begin{BlockClass}{content-box}
+
+\subsubsection*{Textbooks}
+\begin{itemize}
+\item Averill M. Law (2013) Simulation Modeling \& Analysis, 5th edition. (NOTE: there is a 6th edition. We will NOT be using this one.)
+
+\item Henning Mortveit and Gabriel Lawrence \textit{Modelling and Simulation}. Available at \href{https://github.com/Gabriel-vzh2vs/Modelling-And-Simulation-Public-Release}{Github}
+\end{itemize}
+
+\subsection{Supplementary literature}
+\begin{itemize}
+\item \href{"https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf"}{Discrete Event Simulation, 5th Edition} by Banks and et. al.
+
+\item \href{https://artowen.su.domains/mc/}{Monte Carlo Theory, Methods, and Examples} by Art B. Owen
+
+\item \href{https://learning.oreilly.com/library/view/hands-on-simulation-modeling/9781804616888/"}{Hands-On Simulation Modelling with Python} by Giuseppe Ciaburro
+
+\item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470317068}{Simulation: A Modeler's Approach} by James R. Thompson.
+
+\item \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS} by John E. Gibson William T. Scherer, and William F. Gibson
+
+\item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241.
 \end{itemize}
 \end{BlockClass}
 
-\subsubsection*{Attendance:}
-Official written attendance will not be taken. Hands-On Activities may be administered unannounced during any lecture hour, and online surveys will be conducted in class. A student who misses a Hands-On Activity will not receive credit and will not be offered a Hands-On Activity, unless he/she has given prior notification of absence from lecture to the instructors of the overall course (not the TAs).
+\subsubsection*{Attendance}
+Official written attendance will not be taken. 
+
+
 
 \subsubsection*{Software}
 Some words about specialized software including Simio, Flexsim,
 Anylogic, and Arena. Our strategy of using Python and XLRisk. That as
 a professional, you may have to become familiar with one of
 these.
+
+\subsection{Hands-on activities}
+Hands-on activities may be administered unannounced during any lecture hour, and online surveys will be conducted in class. A student who misses a Hands-On Activity will not receive credit and will not be offered a Hands-On Activity, unless he/she has given prior notification of absence from lecture to the instructors of the overall course (not the TAs).
+
 
 \hypertarget{schedule}{}
 \section*{Schedule}
