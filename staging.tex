@@ -110,7 +110,7 @@
 	
 	% --- Person 1 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/Mortveitheadshot.png} \\
+		\includegraphics[width=0.17\linewidth]{images/Mortveitheadshot.png} \\
 		\textbf{Henning S. Mortveit} \\ 
 		Associate Professor \\
 		Office Hours: TBD at Olsson 102A \\
@@ -119,7 +119,7 @@
 	
 	% --- Person 2 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/GabeCropped.jpg}
+		\includegraphics[width=0.17\linewidth]{images/GabeCropped.jpg}
 		
 		\textbf{Gabriel Lawrence} \\ 
 		GTA \& Lab Instructor \\
@@ -129,7 +129,7 @@
 	
 	% --- Person 3 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/maddie.jpeg}
+		\includegraphics[width=0.17\linewidth]{images/maddie.jpeg}
 		
 		\textbf{Madeline Priebe} \\ 
 		Teaching Assistant (UVAccelerate) \\
@@ -139,7 +139,7 @@
 	
 	% --- Person 4 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/Elicook.png}
+		\includegraphics[width=0.17\linewidth]{images/Elicook.png}
 		
 		\textbf{Eli Cook} \\ 
 		Teaching Assistant (UVAccelerate)\\
@@ -149,7 +149,7 @@
 	
 	% --- Person 5 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/Saiesha.jpg}
+		\includegraphics[width=0.17\linewidth]{images/Saiesha.jpg}
 		
 		\textbf{Saiesha Gohil} \\ 
 		Teaching Assistant (Undergraduate)\\
@@ -159,7 +159,7 @@
 	
 	% --- Person 6 ---
 	\begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/tracey.jpeg}
+		\includegraphics[width=0.17\linewidth]{images/tracey.jpeg}
 		
 		\textbf{Tracy Hua} \\ 
 		Teaching Assistant (Undergraduate)\\
@@ -169,7 +169,7 @@
     
 	% --- Person 7 ---
     \begin{BlockClass}{team-member}
-		\includegraphics[width=0.2\linewidth]{images/jingyi.png}	\\	
+		\includegraphics[width=0.17\linewidth]{images/jingyi.png}	\\	
 		\textbf{Jingyi Gao} \\ 
 		Teaching Assistant (Graduate)\\
 		Office Hours: TBD at Olsson \\
@@ -177,6 +177,54 @@
 	\end{BlockClass}
 	
 \end{BlockClass}
+
+\secrule
+
+
+\hypertarget{class}{}
+\section*{What is simulation and modeling about?}
+
+%%\secrule
+%%\subsubsection*{Course Description:}
+
+How would you approach building a race car? How would you support planning efforts to alleviate impacts of a natural disaster? How would you construct a strong investment portfolio for a client? These examples are challenging, and solutions certainly involve systems thinking and systems engineering. 
+
+In this course you will learn about the powerful combination of \emph{modeling} and \emph{simulation}, two mainstays in the toolbox of systems engineers tackling such cases. 
+
+After this course you should be in a position to:
+\begin{itemize}
+\item Assess when modeling-based simulation is a good approach to a problem.
+\item Be able to apply the repertoire of techniques and tools you learn in the course to tackle real problems in a systematic and rigorous manner.
+\item Be able to evaluate the someone else's M\&S-based solution to a problem.
+\item Consider graduate studies involving modeling and simulation.
+\item Appreciate the central role of M\&S in an increasingly technical world.
+\end{itemize}
+
+You have very likely seen examples of modeling and simulation in earlier courses, and perhaps in your internships. But do you really know what modeling is? How about simulation? 
+%%
+To reach the above goals, this course will give a systematic introduction to key topics, theory and practice for modeling and simulation coordinated through lectures, in-class problem solving, lab-sessions, homework, and projects. Specific objectives include the following:
+%%
+\begin{itemize}
+\item Develop a working understanding of modeling, model types, types of uncertainties, and model validation.
+%%
+%%\item ?? Simulation as a means to sample through the lens of stochastic processes.
+%%
+\item Learn theory and application of the Monte Carlo method. The Strong Law of Large Numbers for estimating means of system variables. The Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
+%%
+\item Gain experience implementing models as code. Conduct verification. Apply the Monte Carlo method to spreadsheet-based simulations using the XLRisk plugin. 
+%%
+\item Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
+%%
+\item Conduct distribution modeling (aka "input analysis") to capture random variables of the system. %% Goodness of fit assessment through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
+%%
+\item Have an overview of simulation logic, simulation software, common data structures, platforms and architectures (e.g., HLA, cloud solutions). 
+%%
+\item Learn to model and simulate queuing systems.
+%%
+\item Obtain a foundation on random number generators (RNGs) and their role in simulation-based    system analysis. Learn to assess the quality of RNGs and pitfalls. Generate variates from distributions other than $U(0,1)$.
+%%
+\end{itemize}
+We will also cover selected advanced topic, e.g., agent-based modeling, state machines, comparing alternative systems, simulation optimization; case studies; variance reduction; Pipelines and workflows; Data management.
 
 \secrule
 
@@ -190,67 +238,7 @@ Thursday & 09:30 AM - 10:45 AM && Lecture && Thornton 316
 
 \textbf{\Large Discussion Forum:} \href{https://piazza.com/class/tbd}{Piazza for SYS 3062}
 
-\hypertarget{class}{}
-\section*{Course Information}
 
-%%\secrule
-%%\subsubsection*{Course Description:}
-
-This course is an introduction to theory and practice for modeling and simulation, two mainstays of system engineering. The course provides a broad foundation covering fundamental principles, paradigms, and practices for modeling and analyzing stochastic systems through computational experiments, aka \textit{simulations}. It is a course integrating theory and practice through lectures and lab sessions across topics such as the following:
-
-\begin{itemize}
-    \item Modeling, model verification \& validation, types of uncertainties,
-    with examples of types of models. Modeling and simulation through
-    the lens of stochastic processes.
-
-    \item Techniques theory (SLLN, CLT) for Monte Carlo based simulation
-    analytics (aka "output analysis") used to estimate means and
-    variances of system variables. Statistical independence and lack
-    thereof.
-
-    \item Construction of single confidence intervals with adjustments for
-    skewness. Construction of multiple, simultaneous confidence
-    intervals and the Bonferroni correction.
-
-    \item Estimating sample size to generate confidence intervals with
-    prescribed tolerances.
-
-    \item Spreadsheet-based simulations using the XLRisk plugin.
-
-    \item The process of distribution modeling (aka "input analysis") for
-    capturing random variables of the system. Goodness of fit assessment
-    through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
-
-    \item Simulation logic, common data structures, platforms and
-    architectures (e.g., HLA, cloud solutions). Pipelines and
-    workflows. Data management.
-
-    \item Queuing systems.
-
-    \item Random number generators (RNGs) and their role in simulation-based
-    system analysis. Assessing the quality of RNGs. Pitfalls.
-
-    \item Generating variates from distributions other than $U(0,1)$.
-
-    \item Selected topics, e.g., agent-based modeling, state machines,
-    comparing alternative systems, simulation optimization; case
-    studies.
-\end{itemize}
-
-\subsection*{Learning Objectives}
-
-In your professional career you will undoubtedly encounter projects and problems where simulation can provide insights and solutions. Through this course you will get a foundation of theory and
-practice for simulation-based system analysis allowing you to:
-\begin{itemize}
-\item Determine if \& when simulation is a sound approach
-\item Conduct validation and verification with respect to a simulation-based system analysis
-\item Perform output analyses and determine means and confidence intervals of system variables using the Monte Carlo method. Be able to determine if conditions such as independence are satisfied and assess if adjustments are needed due to, e.g., skewness.
-\item Perform distribution modeling to capture random variables in a stochastic model and evaluate its quality statistically through, e.g., the KS-test.
-\item Develop sampling techniques for non-standard distributions.
-\item Assess quality of random number and random variate generators, and be able to detect basic anomalies.
-\item Model and analyze queuing systems.
-\item Apply the Monte Carlo method in spreadsheet-based simulation models using the XLRisk plugin.
-\end{itemize}
 
 \subsection*{Prerequisites}
 
