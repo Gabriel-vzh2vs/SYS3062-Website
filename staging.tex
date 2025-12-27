@@ -68,6 +68,10 @@
 
 \date{} % No date
 
+
+\def\hsm#1{{\color{blue}{#1}}}
+
+
 \begin{document}
 	
 	% --- Navigation ---
@@ -189,14 +193,14 @@
 
 How would you approach building a race car? How would you support planning efforts to alleviate impacts of a natural disaster? How would you construct a strong investment portfolio for a client? These examples are challenging, and solutions certainly involve systems thinking and systems engineering. 
 
-In this course you will learn about the powerful combination of \emph{modeling} and \emph{simulation}, two mainstays in the toolbox of systems engineers tackling such cases. 
+In this course you will learn about the powerful combination of \emph{modeling} and \emph{simulation}, two mainstays in the toolbox of systems engineers tackling such challenges. 
 
 After this course you should be in a position to:
 \begin{itemize}
 \item Assess when modeling-based simulation is a good approach to a problem.
 \item Be able to apply the repertoire of techniques and tools you learn in the course to tackle real problems in a systematic and rigorous manner.
-\item Be able to evaluate the someone else's M\&S-based solution to a problem.
-\item Consider graduate studies involving modeling and simulation.
+\item Be able to evaluate someone else's M\&S-based solution to a problem.
+\item Be able to take on graduate studies involving modeling and simulation.
 \item Appreciate the central role of M\&S in an increasingly technical world.
 \end{itemize}
 
@@ -209,13 +213,13 @@ To reach the above goals, this course will give a systematic introduction to key
 %%
 %%\item ?? Simulation as a means to sample through the lens of stochastic processes.
 %%
-\item Learn theory and application of the Monte Carlo method. The Strong Law of Large Numbers for estimating means of system variables. The Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
+\item Learn theory and application of the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
 %%
-\item Gain experience implementing models as code. Conduct verification. Apply the Monte Carlo method to spreadsheet-based simulations using the XLRisk plugin. 
+\item Gain experience implementing models as code. Conduct verification. Apply the Monte Carlo method to spreadsheet-based simulations using the XLRisk plugin for Excel. 
 %%
 \item Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
 %%
-\item Conduct distribution modeling (aka "input analysis") to capture random variables of the system. %% Goodness of fit assessment through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
+\item Conduct distribution modeling (aka "input analysis") to capture stochastic element of a model through random variables in your model. %% Goodness of fit assessment through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
 %%
 \item Have an overview of simulation logic, simulation software, common data structures, platforms and architectures (e.g., HLA, cloud solutions). 
 %%
@@ -224,7 +228,7 @@ To reach the above goals, this course will give a systematic introduction to key
 \item Obtain a foundation on random number generators (RNGs) and their role in simulation-based    system analysis. Learn to assess the quality of RNGs and pitfalls. Generate variates from distributions other than $U(0,1)$.
 %%
 \end{itemize}
-We will also cover selected advanced topic, e.g., agent-based modeling, state machines, simulation optimization, variance reduction, pipelines/workflows and data management, and possibly case studies. 
+As time permits, we will cover selected advanced topic, e.g., agent-based modeling, state machines, simulation optimization, variance reduction, pipelines/workflows and data management, and possibly case studies. 
 
 \section*{Course information}
 
@@ -268,22 +272,22 @@ It is also assumed that you have a working knowledge of Python. For Python resou
 
 \subsection*{Supplementary literature}
 \begin{itemize}
-\item  Banks and et. al.: \href{"https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf"}{Discrete Event Simulation, 5th Edition}
+\item  Banks and et. al.: \href{https://ferltz.github.io/inv_oper_2/documents/books/Discrete-Event%20System%20Simulation-Pearson%20Banks%20Carson%20(2013).pdf}{Discrete Event Simulation}, 5th Edition. Note: A book with with many good examples and exercises.
 
-\item Art B. Owen: \href{https://artowen.su.domains/mc/}{Monte Carlo Theory, Methods, and Examples}
+\item Art B. Owen: \href{https://artowen.su.domains/mc/}{Monte Carlo Theory, Methods, and Examples}. Note: and advanced collection of chapters on the Monte Carlo Method and related topics and theory. 
 
 \item  Giuseppe Ciaburro: \href{https://learning.oreilly.com/library/view/hands-on-simulation-modeling/9781804616888/"}{Hands-On Simulation Modelling with Python} 
 
 \item James R. Thompson: \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470317068}{Simulation: A Modeler's Approach} 
 
-\item John E. Gibson William T. Scherer, and William F. Gibson: \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS}
+\item John E. Gibson William T. Scherer, and William F. Gibson: \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS}. Note: a classic you likely have seen in some of your courses.
 
-\item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241.
+\item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241. Note: several educators' thoughts on the use of generative AI in education. A good read.
 \end{itemize}
 \end{BlockClass}
 
 \subsection*{Software}
-In this course you will be using Python and the Excel plugin called XLRisk. The course textbook has instructions for how to set up your Python environment and how to install XLRisk. There will also be a lab session that helps with this. \textbf{LINK TO THE RESOURCE ON GITHUB}
+In this course you will be using Python and the Excel plugin called XLRisk. The course textbook has instructions for how to set up your Python environment and how to install XLRisk. There will also be a lab session that helps with this. \hsm{LINK/URL TO THE RESOURCE ON GITHUB}
 
 You should note that there are many commercial software solutions for modeling and simulation, including Simio, Arena, AnyLogic, and Flexsim but also many others. For a range of reasons (feel free to ask about the reasons), we have chosen to not integrate any of their educational versions in the course. 
 
@@ -292,7 +296,7 @@ You should note that there are many commercial software solutions for modeling a
 In addition to the lectures the course has the following components.
 
 \subsection*{Homework}
-Homework will be posted every other Tuesday at 10:45AM EST on the course Gradescope site. These assignments are integral to the learning and provide the foundation for the exams and projects.  Note that homework may take you significant time and we recommend starting early.
+Homework will be posted every other Tuesday at after the lecture on the course Gradescope site. These assignments are integral to the learning and provide the foundation for the exams and projects.  Note that homework may take you significant time and we recommend starting early.
 
 %% The assignments are designed to assess your knowledge on modeling techniques and their mechanics. These assignments should be done individually or with assistance in Office Hours, include an honor pledge, and be completed by Friday night at 11:59 pm ET, typically a week later. While there is no time limit for these assignments, they are designed not to take more than 3 days. Homework are excellent practice for exams and real-world analysis and should be started early.
 
@@ -336,7 +340,7 @@ Exams are based entirely on classroom notes and discussions, readings, projects,
 \end{itemize}
 There will be 1000 points split between these components. Thus each homework assignment will be worth 50 points while the final exam will be worth 250 points. 
 
-\subsection{About the quality of your work} Practice generating professional work. Would your future boss approve of your homework or exam? If you become the boss, would you approve of the work? \emph{We reserve the right to deduct points for sloppy execution of all graded work.}
+\subsection{About the quality of your work} Practice generating professional work. Would your future boss approve of your homework or exam? If you become the boss, would you approve of the work? \hsm{We reserve the right to deduct points for sloppy execution of all graded work.}
 \end{BlockClass}
 
 
@@ -403,9 +407,10 @@ There will be 1000 points split between these components. Thus each homework ass
 \begin{itemize}
 \item Official written attendance will not be taken. 
 \item We reserve the right to deduct points from all graded work where we deem answers to not be justified, illegible, or otherwise lacking in professionalism. Both typed and handwritten assignments are accepted.
-\item You must upload your homework as PDF file through Canvas by the specified deadline. Late homework will only be accepted with prior permission.
-\item You are allowed to use AI for homework and projects. When using AI, you must briefly describe your reasoning. No prompts please.
-\item Both exams will be written, open book and notes. No AI tools will be permitted.
+\item All work is individual work unless stated otherwise. 
+\item You must upload your homework using the PDF format through Canvas by the specified deadline. Late homework will only be accepted with prior permission.
+\item You are allowed to use AI for homework and projects. When using AI, you must briefly describe your reasoning. No prompts, please. please.
+\item Both exams will be written, open book and notes. No AI tools will be permitted. \hsm{Question about notes on computer??}
 \end{itemize}
 
 
@@ -418,21 +423,23 @@ There will be 1000 points split between these components. Thus each homework ass
 
 %%We will be accommodating also due to exceptional circumstances but this is a large class so please make sure this is truly warranted and contact us as soon as possible. In any case you will do better to submit an incomplete assignment rather than a late one.
 
-\subsubsection*{Illness:}
-We try to create a safe environment, not only for our students, but also for our faculty and our staff. To that end, please stay home or in your dorm room if you are ill with or are symptomatic for any communicable disease. We would rather you stay home and work something out with us for making up work or taking an exam than for an illness to spread through the class. If you believe you are sick, immediately contact Student Health for appropriate treatment or testing at \href{https://www.healthyhoos.virginia.edu/}{HealthyHoos}.
+%%\subsubsection*{Illness:}
+%%We try to create a safe environment, not only for our students, but also for our faculty and our staff. To that end, please stay home or in your dorm room if you are ill with or are symptomatic for any communicable disease. We would rather you stay home and work something out with us for making up work or taking an exam than for an illness to spread through the class. If you believe you are sick, immediately contact Student Health for appropriate treatment or testing at \href{https://www.healthyhoos.virginia.edu/}{HealthyHoos}.
 
-\subsubsection*{Religious Accommodations:}
-It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements.
+\subsection*{Religious Accommodations}
+It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements. If you wish to request accommodations please notify us by email in advance. If you have questions or concerns about academic accommodations for religious observance or religious beliefs you may contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \href{mailto:UVAEOCR@virginia.edu}{UVAEOCR@virginia.edu} or 434-924-3200.
 
-Students who wish to request academic accommodation for a religious observance should submit their request to us by private message via email as far in advance as possible. Students who have questions or concerns about academic accommodations for religious observance or religious beliefs may contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \href{mailto:UVAEOCR@virginia.edu}{UVAEOCR@virginia.edu} or 434-924-3200.
+\subsection*{Accessibility Statement:}
+It is our goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please contact. The Student Disability Access Center (SDAC) offers a range of options, including official accommodations. You may contact Courtney MacMasters who is an SDAC advisor within SEAS on email~\href{mailto:cmacmasters@virginia.edu}{cmacmasters@virginia.edu} or visit the SDAC website at \url{sdac.studenthealth.virginia.edu}. 
+%% If you have already been approved for accommodations through SDAC, please send us your accommodation letter and meet with us so we can develop an implementation plan together.
 
-\subsubsection*{Accessibility Statement:}
-It is our goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please meet with us outside of class so we can explore potential options. Students with disabilities may also wish to work with the Student Disability Access Center (SDAC) to discuss a range of options to removing barriers in this course, including official accommodations. We are fortunate to have an SDAC advisor, Courtney MacMasters, physically located in Engineering. You may email her at \href{mailto:cmacmasters@virginia.edu}{cmacmasters@virginia.edu} to schedule an appointment. For general questions please visit the SDAC website: \url{sdac.studenthealth.virginia.edu}. If you have already been approved for accommodations through SDAC, please send us your accommodation letter and meet with us so we can develop an implementation plan together.
+\subsubsection*{Academic integrity statement}
 
-\subsubsection*{Academic Integrity Statement:}
-"The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the \href{http://honor.virginia.edu/academic-fraud}{university honor code}, including the section on academic fraud."
+\begin{quote}
+``The School of Engineering and Applied Science relies upon and cherishes its community of trust. We firmly endorse, uphold, and embrace the University’s Honor principle that students will not lie, cheat, or steal, nor shall they tolerate those who do. We recognize that even one honor infraction can destroy an exemplary reputation that has taken years to build. Acting in a manner consistent with the principles of honor will benefit every member of the community both while enrolled in the Engineering School and in the future. Students are expected to be familiar with the \href{http://honor.virginia.edu/academic-fraud}{university honor code}, including the section on academic fraud.''
+\end{quote}
 
-In summary, if assignments are individual then no two students should submit the same source code -- any significant, unexplainable overlap in source code of sufficient similarity will be flagged as failure to abide to the Honor Code. You can discuss, you can share resources, you can talk about the assignment but not share code as this incurs an honor code violation. Regardless of circumstances, we will assume that any source code, text, or images submitted alongside reports or projects are of the authorship of the individual students unless otherwise explicitly stated through appropriate means. Any missing information regarding sources will be regarded as a failure to abide by the academic integrity statement even if that was not the intent. Please be careful clearly stating what is your original work and what is not in all assignments.
+%%In summary, if assignments are individual then no two students should submit the same source code -- any significant, unexplainable overlap in source code of sufficient similarity will be flagged as failure to abide to the Honor Code. You can discuss, you can share resources, you can talk about the assignment but not share code as this incurs an honor code violation. Regardless of circumstances, we will assume that any source code, text, or images submitted alongside reports or projects are of the authorship of the individual students unless otherwise explicitly stated through appropriate means. Any missing information regarding sources will be regarded as a failure to abide by the academic integrity statement even if that was not the intent. Please be careful clearly stating what is your original work and what is not in all assignments.
 \end{BlockClass}
 
 \begin{BlockClass}{spacer-small}
@@ -440,8 +447,6 @@ In summary, if assignments are individual then no two students should submit the
 \end{BlockClass}
 
 \section*{Additional Resources}
-
-\secrule
 
 \subsubsection*{Support for Career Development:}
 Engaging in your career development is an important part of your student experience. For example, presenting at a research conference, attending an interview for a job or internship, or participating in an extern/shadowing experience are not only necessary steps on your path but are also invaluable lessons in and of themselves. I wish to encourage and support you in activities related to your career development. To that end, please notify me by email as far in advance as possible to arrange for appropriate accommodations.
@@ -457,7 +462,7 @@ You have many resources available to you when you experience academic or persona
     \item \href{https://engineering.virginia.edu/current-students/current-undergraduate-students/student-support/tutoring}{Free tutoring} is available for most classes
 \end{itemize}
 
-\textbf{Health and Well-being:}
+\textbf{Health and well-being:}
 \begin{itemize}
     \item \href{https://engineering.virginia.edu/about/offices/office-graduate-programs/student-support-services#accordion716460}{Assistant Dean of Students}
     \item Elizabeth Ramirez-Weaver, CAPS counselor
@@ -479,9 +484,7 @@ If you would prefer to disclose such conduct to a confidential resource where wh
 
 As your instructors, know that we care about you and your well-being and stand ready to provide support and resources as we can. By University Policy, all of us are responsible employees, which means that we are required by federal law to report certain kinds of conduct that you report to us to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also determining whether further action is necessary to ensure survivor safety and the safety of the University community.
 
-\secrule
-
-\section{Prerequisites: details}
+\section{Prerequisites - Additional details}
 \label{sec:prereq_list} 
 
 The following topics from probability and statistics will be assumed. 
@@ -499,7 +502,7 @@ The following topics from probability and statistics will be assumed.
 \item The Poisson process. Rudimentary understanding of stochastic processes.
 \item Confidence intervals
 \item Hypothesis testing
-\item $\chi^2$-test
+\item The $\chi^2$-test
 \end{itemize}
 
 Some online resources that may be helpful include:
