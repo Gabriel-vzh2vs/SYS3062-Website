@@ -1,4 +1,4 @@
-name: Build Lwarp HTML and Deploy v3
+name: Build Lwarp HTML and Deploy v4
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
         # We use the official TeX Live image which includes lwarp.
         # We mount the current workspace to /data in the container.
         # We explicitly remove staging.html and clean lwarp to ensure a fresh build.
-        # ADDED: Installation of poppler-utils via apt-get.
+        # ADDED: Installation of poppler-utils via apt-get for image conversion.
         # ADDED: Explicit 'tlmgr option repository' to use a Tier 1 mirror (Utah) to avoid "remote database older" errors.
         run: |
           docker run --rm \
@@ -40,12 +40,17 @@ jobs:
         run: |
           mkdir -p _site
           
-          # Move the compiled HTML. 
-          # We rename staging.html to index.html so the browser opens it by default.
+          # Check if the compilation succeeded
           if [ -f staging.html ]; then
+            # VITAL FIX: Use sed to find "staging.html" inside the generated file 
+            # and replace it with "index.html".
+            # This ensures that internal links (anchors, TOC) point to the correct URL.
+            sed -i 's/staging\.html/index.html/g' staging.html
+            
+            # Move the file to _site as index.html so it serves as the homepage
             cp staging.html _site/index.html
           else
-            echo "Error: staging.html was not found."
+            echo "Error: staging.html was not found. Compilation may have failed."
             exit 1
           fi
 
