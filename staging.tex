@@ -63,8 +63,10 @@
 % Define a command for the horizontal rule
 \newcommand{\secrule}{\begin{center}\rule{0.5\textwidth}{0.4pt}\end{center}}
 
-% Hyperref must be last
+% Hyperref and cleveref must be last
+\usepackage{varioref}
 \usepackage[colorlinks=true, urlcolor=PrimaryBlue, linkcolor=PrimaryBlue, hidelinks]{hyperref}
+\usepackage{cleveref} % For Slightly Better References (So that your links actually work)
 
 \date{} % No date
 
@@ -232,7 +234,7 @@ As time permits, we will cover selected advanced topic, e.g., agent-based modeli
 
 \subsection*{\textbf{Lecture/Lab times and rooms}}
 
-\phantom{}\qquad\begin{tabular}{llllll}
+\phantom{}\begin{tabular}{llllll}
 Tuesday &  09:30 AM - 10:45 AM && Lecture && Thornton 303\\
 Tuesday &  05:00 PM - 06:15 PM && Lab     && Olsson 120  \\
 Thursday & 09:30 AM - 10:45 AM && Lecture && Thornton 303
@@ -253,9 +255,9 @@ Thursday & 09:30 AM - 10:45 AM && Lecture && Thornton 303
 
 
 \subsection*{Prerequisites}
-Official prerequisites are: SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent courses. Key knowledge needed for the course includes calculus, probability, basic mathematical modeling, and programming. Other course such as linear algebra and differential equations will helpful, but are not required. A specific list of topics that will be assumed from APMA 3100 and 3120 is given in Section~\ref{sec:prereq_list} (link).
+Official prerequisites are: SYS 2001, APMA/MATH 3100, and APMA/STAT 3120 or equivalent courses. Key knowledge needed for the course includes calculus, probability, basic mathematical modeling, and programming. Other course such as linear algebra and differential equations will helpful, but are not required. A specific list of topics that will be assumed from APMA 3100 and 3120 is given in Section:~\nameref{sec:prereq_list}.
 %%
-It is also assumed that you have a working knowledge of Python. For Python resources, see Section~\ref{sec:python_resources} (link). 
+It is also assumed that you have a working knowledge of Python. For Python resources, see Section:~\nameref{sec:python_resources}. 
 
 
 
@@ -388,7 +390,8 @@ Lab: Project 1 Workday \\ \release{Homework 3}}
 \\ 
 Lab 4: Advanced Modeling (DES)\\ \due{Lab Project 1}} 
 \caltextnext{Lecture: Implementing discrete event simulations for queuing networks. Notes on software.}
-\caltextnext{\important{Midterm Exam} \\ Lab: Mid-Semester Survey}
+\caltextnext{\important{Midterm Exam} \\ Lab: Mid-Semester Survey
+\release{Survey}}
 \caltextnext{Lecture: TBD (\hsm{platforms/hla/software?)}}
 %%
 %% ------------------------------------------------------
@@ -424,7 +427,7 @@ Project 2: The Choice \\ \release{Lab Project 2, Homework 6}}
 %%
 \caltextnext{Lecture: Advanced topics (More ABMs, the ODD protocol, and theory. Repast and Mason. Python libraries?)
 \\ 
-\important{Extension, Lab 9: Alternative Systems or SYSML}}
+\important{Extension, Lab 9 (marked as 11): SYSML}}
 \caltextnext{Lecture: Advanced topics (Simulation in the real world I? The full process. SysML 2.0. Digital enterprise management systems.)}
 %%
 \caltextnext{Lecture:  Advanced topics (Simulation in the real world II AI-infused systems?)
@@ -534,7 +537,7 @@ If you would prefer to disclose such conduct to a confidential resource where wh
 
 As your instructors, know that we care about you and your well-being and stand ready to provide support and resources as we can. By University Policy, all of us are responsible employees, which means that we are required by federal law to report certain kinds of conduct that you report to us to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also determining whether further action is necessary to ensure survivor safety and the safety of the University community.
 
-\section*{Prerequisites - Additional details}
+\section{Prerequisites - Additional details}
 \label{sec:prereq_list} 
 
 The following topics from probability and statistics will be assumed. 
@@ -562,7 +565,7 @@ Some online resources that may be helpful include:
 \item \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{Review material for Statistics (APMA 3120)}.
 \end{itemize}
 
-\section*{Python programming}
+\section{Python programming}
 \label{sec:python_resources}
 
 This course will focus on Python for the programming. Some resources that can be helpful include:
