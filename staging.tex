@@ -67,7 +67,7 @@
 \newcommand{\secrule}{\begin{center}\rule{0.5\textwidth}{0.4pt}\end{center}}
 
 % Hyperref and cleveref must be last
-\usepackage{varioref}
+\usepackage[nospace]{varioref}
 \usepackage[colorlinks=true, urlcolor=PrimaryBlue, linkcolor=PrimaryBlue, hidelinks]{hyperref}
 \usepackage{cleveref} % For Slightly Better References (So that your links actually work)
 
@@ -206,27 +206,29 @@ After this course you should be in a position to:
 
 You have very likely seen examples of modeling and simulation in earlier courses, and perhaps in your internships. But do you really know what modeling is? How about simulation? 
 %%
-To reach the above goals, this course will give a systematic introduction to key topics, theory and practice for modeling and simulation coordinated through lectures, in-class problem solving, lab-sessions, homework, and projects. Specific objectives include the following:
+To reach the above goals, this course will give a systematic introduction to key topics, theory and practice for modeling and simulation coordinated through lectures, in-class problem solving, lab-sessions, homework, and projects. By the end of the course you will know how to:
 %%
 \begin{itemize}
-\item Develop a working understanding of modeling, model types, types of uncertainties, and model validation.
+\item Apply your understanding of modeling, model types, types of uncertainties, and model validation to a broad range of projects and scenarios.
 %%
 %%\item ?? Simulation as a means to sample through the lens of stochastic processes.
 %%
-\item Learn theory and applications of the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
+\item Apply principles and theory for the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%Learn theory and applications of the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
 %%
-\item Gain experience implementing models as code. Conduct verification. %%
-\item Apply the Monte Carlo method to spreadsheet-based simulations using the XLRisk plugin for Excel. 
+\item Implement stochastic models as code and conduct verification. %%
+\item Conduct Monte Carlo based spreadsheet-based simulations using the XLRisk plugin for Excel. 
 %%
-\item Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
+\item Construct single confidence intervals with adjustments for skewness, and to construct multiple, simultaneous confidence intervals under the Bonferroni correction. %%Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
+%%
+\item Estimate the sample size needed to generate confidence intervals with prescribed tolerances.
+%%
+\item Model and simulate queuing systems.
 %%
 \item Conduct distribution modeling (aka ``input analysis'') to capture stochastic elements of a system through random variables in your model. %% Goodness of fit assessment through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
 %%
-\item Have an overview of simulation logic, simulation software, common data structures, platforms and architectures (e.g., HLA, cloud solutions). 
+\item Generate random number and variates, and to evaluate potential pitfalls when these are part of your models and simulations.
 %%
-\item Learn to model and simulate queuing systems.
-%%
-\item Obtain a foundation on random number generators (RNGs) and their role in simulation-based    system analysis. Learn to assess the quality of RNGs and pitfalls. Generate variates from distributions other than $U(0,1)$.
+\item Apply your broad knowledge of simulation logic, simulation software, common data structures, platforms and architectures to advise on, evaluate, or implement appropriate solutions.
 %%
 \end{itemize}
 As time permits, we will cover selected advanced topic, e.g., agent-based modeling, state machines, simulation optimization, variance reduction, pipelines/workflows and data management, and case studies. 
@@ -395,8 +397,8 @@ Lab: Project 1 Workday \\ \release{Homework 3}}
 \\ 
 Lab 4: Simulating Stochastic Processes\\ \due{Lab Project 1}} 
 \caltextnext{Lecture: Implementing discrete event simulations for queuing networks. Notes on software.}
-\caltextnext{\important{Midterm Exam} \\ Lab: Mid-Semester Survey
-\release{Survey}}
+\caltextnext{\important{Midterm Exam} \\ Lab 6: Queuing and Output Analysis \\
+\release{Lab 5}}
 \caltextnext{Lecture: Software/Platforms/HLA\maybeTopic}
 %%
 %% ------------------------------------------------------
@@ -408,21 +410,21 @@ Lab 4: Simulating Stochastic Processes\\ \due{Lab Project 1}}
 \caltextnext{Lecture: 
 Distribution modeling overview
 \\ 
-Lab 5: Queuing and Output Analysis \\\release{Homework 4, Lab 5}}
+Lab 5: Advanced Modeling (Discrete Events + ODEs) \\\release{Homework 4, Lab 5}}
 \caltextnext{Lecture: Distribution modeling and Phitter}
 %%
 \caltextnext{Lecture: Distribution modeling wrap-up
-\\ Lab 6: Simulating Stochastic Processes \release{Lab 6}}
+\\ Lab 7: Compartmental Models Lab \\ \release{Lab 7}}
 \caltextnext{Lecture: RNGs and their role in M\&S}
 %%
 \caltextnext{Lecture: 
 Properties of good RNGs. Pitfalls.
 \\ 
-Lab 7: Comparing Two Modeling Methodologies \\\release{Lab 7, Homework 5}}
+Lab 8: Comparing Modeling Methodologies \\\release{Lab 8, Homework 5}}
 \caltextnext{Lecture: Generating variates (I)\\}
 %%
 \caltextnext{Lecture: Generating variates (II)
-\\ Lab 8: Compartmental Models (Continuous Modeling) \\ \release{Lab 8}}
+\\ Lab 9: Forecasting using Simulation (Flex Day) \\ \release{Lab 9}}
 \caltextnext{Lecture: Variance reduction techniques\maybeTopic}
 %%
 \caltextnext{Lecture: Advanced topics (State machines)\maybeTopic
@@ -432,7 +434,7 @@ Project 2: The Choice \\ \release{Lab Project 2, Homework 6}}
 %%
 \caltextnext{Lecture: Advanced topics (More ABMs, the ODD protocol, and theory. Repast and Mason. Python libraries)\maybeTopic
 \\ 
-\important{Extension, Lab 9 (marked as 11): SYSML}}
+\important{Lab 10: SYSML}}
 %%
 \caltextnext{Lecture: Advanced topics (Simulation in the real world I The full process. SysML 2.0. Digital  management systems.)\maybeTopic}
 %%
@@ -544,7 +546,7 @@ If you would prefer to disclose such conduct to a confidential resource where wh
 
 As your instructors, know that we care about you and your well-being and stand ready to provide support and resources as we can. By University Policy, all of us are responsible employees, which means that we are required by federal law to report certain kinds of conduct that you report to us to the University's Title IX Coordinator. The Title IX Coordinator's job is to ensure that the reporting student receives the resources and support that they need, while also determining whether further action is necessary to ensure survivor safety and the safety of the University community.
 
-\section*{Prerequisites - Additional details}
+\section{Prerequisites - Additional details}
 \label{sec:prereq_list} 
 
 The following topics from probability and statistics will be assumed. 
@@ -572,7 +574,7 @@ Some online resources that may be helpful include:
 \item \href{https://www.youtube.com/playlist?list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr}{Review material for Statistics (APMA 3120)}.
 \end{itemize}
 
-\section*{Python programming}
+\section{Python programming}
 \label{sec:python_resources}
 
 This course will focus on Python for the programming. Some resources that can be helpful include:
