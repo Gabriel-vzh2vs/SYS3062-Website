@@ -43,7 +43,7 @@
 \renewcommand\labelitemii{\rule[0.1em]{0.3em}{0.3em}}
 
 
-% For the Website Version, If you want color.
+% For the Website Version, if you want color.
 \newcommand{\Exam}[1]{\InlineClass{cal-exam}{#1}}
 \newcommand{\Holiday}[1]{\InlineClass{cal-holiday}{#1}}
 \newcommand{\Due}[1]{\InlineClass{cal-due}{#1}}
@@ -121,7 +121,8 @@
 		\includegraphics[width=0.17\linewidth]{images/Mortveitheadshot.png} \\
 		\textbf{Henning S. Mortveit} \\ 
 		Associate Professor \\
-		Office Hours: Mon 1:00-2:00 pm \& Thu 12:30-1:30 pm in Olsson 102A \\
+		Office Hours: Mon 1:00-2:00 pm, \\
+        Thu 12:30-1:30 pm in Olsson 102A \\
 		Email: \href{mailto:Henning.Mortveit@virginia.edu}{Henning.Mortveit}
 	\end{BlockClass}
 	
@@ -193,14 +194,14 @@
 \hypertarget{class}{}
 \section*{What is simulation and modeling about?}
 
-How would you approach building a race car? How would you support planning efforts to alleviate impacts of a natural disaster? How would you construct a strong investment portfolio for a client? These examples are challenging and solutions certainly involve systems thinking and systems engineering. 
+How would you approach building a race car? How would you support planning efforts to alleviate the impacts of a natural disaster? How would you construct a strong investment portfolio for a client? These examples are challenging, and solutions certainly involve systems thinking and systems engineering. 
 
-In this course you will learn about the powerful combination of \emph{modeling} and \emph{simulation}, two mainstays in the toolbox of systems engineers tackling such challenges. 
+In this course, you will learn about the powerful combination of \emph{modeling} and \emph{simulation}, two mainstays in the toolbox of systems engineers tackling such challenges. 
 
-After this course you should be in a position to:
+After this course, you should be in a position to:
 \begin{itemize}
 \item Assess when modeling-based simulation is a good approach to a problem.
-\item Be able to apply the repertoire of techniques and tools you learn in the course to tackle real problems in a systematic and rigorous manner.
+\item Be able to apply the repertoire of techniques and tools you learn in the course to tackle real problems systematically and rigorously.
 \item Be able to evaluate someone else's M\&S-based solution to a problem.
 \item Be able to take on graduate studies involving modeling and simulation.
 \item Appreciate the central role of M\&S in an increasingly technical world.
@@ -208,7 +209,7 @@ After this course you should be in a position to:
 
 You have very likely seen examples of modeling and simulation in earlier courses, and perhaps in your internships. But do you really know what modeling is? How about simulation? 
 %%
-To reach the above goals, this course will give a systematic introduction to key topics, theory and practice for modeling and simulation coordinated through lectures, in-class problem solving, lab-sessions, homework, and projects. By the end of the course you will know how to:
+To reach the above goals, this course will give a systematic introduction to key topics, theory, and practice for modeling and simulation coordinated through lectures, in-class problem solving, lab-sessions, homework, and projects. By the end of the course, you will know how to:
 %%
 \begin{itemize}
 \item Apply your understanding of modeling, model types, types of uncertainties, and model validation to a broad range of projects and scenarios.
@@ -218,9 +219,9 @@ To reach the above goals, this course will give a systematic introduction to key
 \item Apply principles and theory for the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%Learn theory and applications of the Monte Carlo method, including the Strong Law of Large Numbers for estimating means of system variables, and the Central Limit Theorem for estimating confidence intervals. %%The assumptions of statistical independence. 
 %%
 \item Implement stochastic models as code and conduct verification. %%
-\item Conduct Monte Carlo based spreadsheet-based simulations using the XLRisk plugin for Excel. 
+\item Conduct Monte Carlo-based spreadsheet-based simulations using the XLRisk plugin for Excel. 
 %%
-\item Construct single confidence intervals with adjustments for skewness, and to construct multiple, simultaneous confidence intervals under the Bonferroni correction. %%Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
+\item Construct single confidence intervals with adjustments for skewness, and multiple, simultaneous confidence intervals under the Bonferroni correction. %%Learn to construct single confidence intervals with adjustments for skewness. Construct multiple, simultaneous confidence intervals and the Bonferroni correction. Estimate sample size needed to generate confidence intervals with prescribed tolerances.
 %%
 \item Estimate the sample size needed to generate confidence intervals with prescribed tolerances.
 %%
@@ -228,12 +229,12 @@ To reach the above goals, this course will give a systematic introduction to key
 %%
 \item Conduct distribution modeling (aka ``input analysis'') to capture stochastic elements of a system through random variables in your model. %% Goodness of fit assessment through the \(\chi^2 \)  - and KS-tests. The Phitter tool.
 %%
-\item Generate random number and variates, and  evaluate potential pitfalls when these are part of your models and simulations.
+\item Generate random numbers and variates, and evaluate potential pitfalls when these are part of your models and simulations.
 %%
-\item Apply your broad knowledge of simulation logic, simulation software, common data structures, platforms and architectures to advise on, evaluate, or implement appropriate solutions.
+\item Apply your broad knowledge of simulation logic, simulation software, common data structures, platforms, and architectures to advise on, evaluate, or implement appropriate solutions.
 %%
 \end{itemize}
-As time permits, we will cover selected advanced topic, e.g., agent-based modeling, state machines, simulation optimization, variance reduction, pipelines/workflows and data management, and case studies. 
+As time permits, we will cover selected advanced topic, e.g., agent-based modeling, state machines, simulation optimization, variance reduction, pipelines/workflows, and data management, and case studies. 
 
 %% --------------------------------------------
 
@@ -289,26 +290,26 @@ It is also assumed that you have a working knowledge of Python. For Python resou
 
 \item John E. Gibson William T. Scherer, and William F. Gibson: \href{https://onlinelibrary.wiley.com/doi/epdf/10.1002/9780470130599}{HOW TO DO SYSTEMS ANALYSIS}. Note: a classic you likely have seen in some of your courses.
 
-\item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241. Note: several educators' thoughts on the use of generative AI in education. Note: A good read.
+\item A. Tolk, P. Barry, M. L. Loper, G. Rabadi, W. T. Scherer and L. Yilmaz \href{https://ieeexplore.ieee.org/abstract/document/10408241}{Chances and Challenges of ChatGPT and Similar Models for Education in M\&S} 2023 Winter Simulation Conference (WSC), San Antonio, TX, USA, pp. 3332-3346, doi: 10.1109/WSC60868.2023.10408241. Note: Several educators' thoughts on the use of generative AI in education. Note: A good read.
 \end{itemize}
 \end{BlockClass}
 
 \subsection*{Software}
-In this course you will be using Python along with the free Excel plugin called XLRisk. The course textbook has instructions for how to set up your Python environment and how to install XLRisk. There will also be a lab session that helps with this, see \href{https://github.com/Gabriel-vzh2vs/SYS3062SoftwarePackage}{Python Package via UV} and the \href{https://github.com/pyscripter/XLRisk}{XLRisk website}.
+In this course, you will be using Python along with the free Excel plugin called XLRisk. The course textbook has instructions for how to set up your Python environment and how to install XLRisk. There will also be a lab session that helps with this, see \href{https://github.com/Gabriel-vzh2vs/SYS3062SoftwarePackage}{Python Package via UV} and the \href{https://github.com/pyscripter/XLRisk}{XLRisk website}.
 
-You should note that there are many commercial software solutions for modeling and simulation, including Simio, Arena, AnyLogic, and Flexsim but also many others. For a range of reasons (feel free to ask about the reasons), we have chosen to not integrate any of their educational versions in the course. 
+You should note that there are many commercial software solutions for modeling and simulation, including Simio, Arena, AnyLogic, and Flexsim but also many others. For a range of reasons (feel free to ask about the reasons), we have chosen to not to integrate any of their educational versions in the course. 
 
 \section*{Course components}
 
-In addition to the lectures the course has the following components.
+In addition to the lectures, the course has the following components.
 
 \subsection*{Homework}
-Homework will be posted every other Tuesday at after the lecture on the course Gradescope site. These assignments are integral to the learning and provide the foundation for the exams and projects.  Note that homework may take you significant time and we recommend starting early.
+Homework will be posted every other Tuesday after the lecture on the course \href{https://www.gradescope.com/courses/1176037}{Gradescope site.} These assignments are integral to the learning and provide the foundation for the exams and projects.  Note that homework may take you a significant time, and we recommend starting early.
 
 %% The assignments are designed to assess your knowledge on modeling techniques and their mechanics. These assignments should be done individually or with assistance in Office Hours, include an honor pledge, and be completed by Friday night at 11:59 pm ET, typically a week later. While there is no time limit for these assignments, they are designed not to take more than 3 days. Homework are excellent practice for exams and real-world analysis and should be started early.
 
 \subsection*{Lab}
-Simulation is not a spectator sport, and the lab is an integral part of the course providing you with hands-on experience putting  theory from the lecture into practice. Labs will frequently have ``pre-labs'' which you are expected to complete beforehand.
+Simulation is not a spectator sport, and the lab is an integral part of the course, providing you with hands-on experience putting theory from the lecture into practice. Labs will frequently have ``pre-labs'' which you are expected to complete beforehand.
 
 %% of the course  is mainly in the lab.  And the lab will  cover aspects such as creating and configuring a Python environment, a tutorial on the XLRisk Excel plugin, basics of debugging in Python, VSCode and Copilot. There will be a weekly lab assignment that maybe directly connected with lecture or expands on the concepts in lecture.
 
@@ -321,11 +322,11 @@ If you are unable to attend a lecture with hands-on-activities, you will have th
 \subsection*{Projects}
 The class will have two group projects involving more complex problems and data sets. 
 %%These exercises provide a real-world context for what we learn and are open-ended problem solving experiences that illustrate the concepts of modeling and simulation in practice. Hence, they provide the opportunity to demonstrate understanding of class material using real data to solve a goal-directed problem. 
-Projects provide you with an opportunity to perform a detailed analysis as well communicate your results in a professional manner as a technical document and/or a presentation.
+Projects provide you with an opportunity to perform a detailed analysis as well as professionally communicate your results as a technical document and/or a presentation.
 
 \subsection*{Exams}
 
-Both the mid-term exam and the final exam are open-book, open-notes, and are cumulative. %%requiring analytical problem solving. The final examination is cumulative. Example questions for both exams are in the in-progress Textbook.
+Both the mid-term exam and the final exam are open-book, open-notes, and cumulative. %%requiring analytical problem solving. The final examination is cumulative. Example questions for both exams are in the in-progress Textbook.
 
 
 %%\subsection{Hands-on activities}
@@ -346,7 +347,7 @@ Both the mid-term exam and the final exam are open-book, open-notes, and are cum
 \item Final exam: 25\%
 %% \item Miscellaneous (+/-): Final Grades are Decided using Instructor Discretion.
 \end{itemize}
-There will be 1000 points split between these components. Thus each homework assignment will be worth 50 points while the final exam will be worth 250 points. 
+There will be 1000 points split between these components. Thus, each homework assignment will be worth 50 points, while the final exam will be worth 250 points. 
 
 \subsection*{About the quality of your work} Practice generating professional work. Would your future boss approve of your homework or exam? If you were the boss, would you approve of the work? \hsm{We reserve the right to deduct points for sloppy execution of all graded work.}
 \end{BlockClass}
@@ -370,7 +371,7 @@ There will be 1000 points split between these components. Thus each homework ass
 \TRClass
 % schedule
 \caltexton{1}{Lecture \& Lab: \href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_1__DES_Lab__Amurmaple_-3.pdf}{Introduction to Modeling and Simulation} \\ \release{Homework 1}}
-\caltextnext{Lecture: The Monte Carlo Method and the Strong Law of Large Number (SLLN)}
+\caltextnext{Lecture: The Monte Carlo Method and the Strong Law of Large Numbers (SLLN)}
 %%
 \caltextnext{Lecture: Examples of the Monte Carlo method. Independence.
 \\ 
@@ -387,17 +388,17 @@ There will be 1000 points split between these components. Thus each homework ass
 \caltextnext{Lecture: 
 MC method: Determining the number of replications needed for prescribed accuracy.
 \\ 
-\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_4__DES_Lab__Amurmaple_.pdf}{Lab 3: Portfolios with CI, Skewness, Kurtosis!} \\ \release{Lab 3, Lab Project 1}}
+\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_4__DES_Lab__Amurmaple_.pdf}{Lab 3: Portfolios with CI, Skewness, Kurtosis!} \\ \release{Snow Delay}}
 \caltextnext{Lecture: 
 Multiple, simultaneous confidence intervals and Bonferroni's inequality.
-\\}
-\caltextnext{Lecture: Model- and simulation types. Simulations as an approach to sample stochastic processes. 
+\\  \due{Homework 2}}
+\caltextnext{Lecture: Random Number Generation and its roles in M\&S  
 \\ 
-\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_5__DES_Lab__Amurmaple_.pdf}{Lab: Project 1 Workday} \\ \release{Homework 3}}
-\caltextnext{Lecture: Queuing systems. Performance measures. Discrete event simulation.}
+\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_5__DES_Lab__Amurmaple_.pdf}{Lab 3: Portfolios with CI, Skewness, Kurtosis!} \\ \release{Homework 3, Lab 3}}
+\caltextnext{Lecture: Random Variate Generation Methods in M\&S (e.g: Inverse Transform)}
 \caltextnext{Lecture: Modeling and simulation of queuing networks
 \\ 
-\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_6__DES_Lab__Amurmaple_.pdf}{Lab 4: Simulating Stochastic Processes}\\ \due{Lab Project 1}} 
+\href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_6__DES_Lab__Amurmaple_.pdf}{Project 1 \& Lab 4: Simulating Stochastic Processes}\\ \due{Homework 4}} 
 \caltextnext{Lecture: Implementing discrete event simulations for queuing networks. Notes on software.}
 \caltextnext{\important{Midterm Exam} \\ \href{https://raw.githubusercontent.com/Gabriel-vzh2vs/SYS3062-Website/main/Slides/Day_7b__DES_Lab__Amurmaple_.pdf}{Lab 6: Queuing and Output Analysis}\\
 \release{Lab 6}}
@@ -491,10 +492,10 @@ Project 2: The Choice \\ \release{Lab Project 2, Homework 6}}
 %%We try to create a safe environment, not only for our students, but also for our faculty and our staff. To that end, please stay home or in your dorm room if you are ill with or are symptomatic for any communicable disease. We would rather you stay home and work something out with us for making up work or taking an exam than for an illness to spread through the class. If you believe you are sick, immediately contact Student Health for appropriate treatment or testing at \href{https://www.healthyhoos.virginia.edu/}{HealthyHoos}.
 
 \subsection*{Religious Accommodations}
-It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements. If you wish to request accommodations please notify us by email in advance. If you have questions or concerns about academic accommodations for religious observance or religious beliefs you may contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \href{mailto:UVAEOCR@virginia.edu}{UVAEOCR@virginia.edu} or 434-924-3200.
+It is the University's long-standing policy and practice to reasonably accommodate students so that they do not experience an adverse academic consequence when sincerely held religious beliefs or observances conflict with academic requirements. If you wish to request accommodations, please notify us by email in advance. If you have questions or concerns about academic accommodations for religious observance or religious beliefs, you may contact the University's Office for Equal Opportunity and Civil Rights (EOCR) at \href{mailto:UVAEOCR@virginia.edu}{UVAEOCR@virginia.edu} or 434-924-3200.
 
 \subsection*{Accessibility Statement:}
-It is our goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please contact us. The Student Disability Access Center (SDAC) offers a range of options, including official accommodations. You may contact Courtney MacMasters who is an SDAC advisor within SEAS on email~\href{mailto:cmacmasters@virginia.edu}{cmacmasters@virginia.edu} or visit the SDAC website at \url{sdac.studenthealth.virginia.edu}. 
+It is our goal to create a learning experience that is as accessible as possible. If you anticipate any issues related to the format, materials, or requirements of this course, please contact us. The Student Disability Access Center (SDAC) offers a range of options, including official accommodations. You may contact Courtney MacMasters, who is an SDAC advisor within SEAS on email~\href{mailto:cmacmasters@virginia.edu}{cmacmasters@virginia.edu} or visit the SDAC website at \url{sdac.studenthealth.virginia.edu}. 
 %% If you have already been approved for accommodations through SDAC, please send us your accommodation letter and meet with us so we can develop an implementation plan together.
 
 \subsubsection*{Academic integrity statement}
@@ -516,7 +517,7 @@ It is our goal to create a learning experience that is as accessible as possible
 Engaging in your career development is an important part of your student experience. For example, presenting at a research conference, attending an interview for a job or internship, or participating in an extern/shadowing experience are not only necessary steps on your path but are also invaluable lessons in and of themselves. I wish to encourage and support you in activities related to your career development. To that end, please notify me by email as far in advance as possible to arrange for appropriate accommodations.
 
 \subsubsection*{Student Support Team:}
-You have many resources available to you when you experience academic or personal stresses. In addition to your professors, the School of Engineering and Applied Science has staff members located in Thornton Hall who you can contact to help manage academic or personal challenges. Please do not wait until the end of the semester to ask for help!
+You have many resources available to you when you experience academic or personal stress. In addition to your professors, the School of Engineering and Applied Science has staff members located in Thornton Hall who you can contact to help manage academic or personal challenges. Please do not wait until the end of the semester to ask for help!
 
 \textbf{Learning:}
 \begin{itemize}
@@ -579,7 +580,7 @@ Some online resources that may be helpful include:
 \section{Python programming}
 \label{sec:python_resources}
 
-This course will focus on Python for the programming. Some resources that can be helpful include:
+This course will focus on Python for programming. Some resources that can be helpful include:
 \begin{itemize}
 \item  \href{https://www.datacamp.com/courses/intro-to-python-for-data-science}{Python programming} 
 
